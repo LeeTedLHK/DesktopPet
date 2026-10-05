@@ -1,0 +1,47 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "references": [
+    "src/DesktopPet/Assets/Pet/pet.jpg",
+    "src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+  ],
+  "layout": "3 columns by 2 rows; 1536x1024 RGBA; split to 256x256 frames preserving alpha",
+  "assets": [
+    {
+      "action": "Petting",
+      "source": "exec-02d86742-b355-4e73-b72e-9e526df57fa1.png",
+      "workspaceSheet": "artifacts/imagegen/p2/Petting.png",
+      "prompt": "Use case: stylized-concept. Asset type: desktop pet PNG animation sprite sheet. Input image 1 is identity reference (white curly Bichon Frise, red collar and yellow round bell); image 2 is anatomy and photographic texture reference. Generate a NEW animation asset, not a copy of either backdrop. Match this same dog, realistic soft detailed white curly fur, black nose and round dark eyes, red narrow collar and small yellow bell, consistent soft neutral studio light. The dog is sitting front-facing. Six sequential animation keyframes of enjoying head petting: neutral attentive, eyes half closed, head leaning left, eyes closed blissfully, head leaning right, soft happy return. No human hand; show reaction only. Layout: EXACTLY 3 columns by 2 rows of equal square cells, six full body poses in row-major chronological order, canvas aspect ratio 3:2. Each full dog fits inside its cell with generous transparent margins; paw baseline 88% down each cell, body center fixed. No pose crosses a cell boundary. Same camera, scale and proportions in all cells. Transparent RGBA background, no floor, no cast shadow, no grid lines, no labels, no text, no watermark, no scenery, no props beyond those explicitly requested. Fur edges genuinely transparent, no painted checkerboard. This is a functional game sprite sheet to be split into six frames."
+    },
+    {
+      "action": "Feeding",
+      "source": "exec-661df8da-0b61-496e-b9c6-6e1c7a8b3033.png",
+      "workspaceSheet": "artifacts/imagegen/p2/Feeding.png",
+      "prompt": "Use case: stylized-concept. Asset type: desktop pet PNG animation sprite sheet. Input image 1: identity reference white curly Bichon Frise with red narrow collar and small yellow round bell. Image 2: anatomy, fur texture, proportions reference. Generate the SAME realistic soft fluffy white dog, black nose, round dark eyes, matching proportions, lighting and photographic illustration style. Six sequential animation keyframes of eating from a small simple muted teal dog bowl directly in front of its paws: noticing bowl, head starting to lower, eating nose near bowl, chewing with head slightly up, licking muzzle, happy seated after eating. Bowl stays in same spot throughout. EXACTLY 3 columns by 2 rows of equal square cells, six complete full body poses, row-major chronological order, 3:2 aspect ratio. Stable body size, center and paw baseline at 88% cell height. Generous transparent margins, no overlap across cells. Transparent RGBA, no floor/shadow/grid/labels/text/watermark/scenery. No extra props except the food bowl if requested. No leash, no human. Genuine transparent fur edges, no painted checkerboard. Functional game sprite sheet to split into six frames."
+    },
+    {
+      "action": "Stretching",
+      "source": "exec-8e5de1df-be3a-49d0-bb68-aa609bd144b2.png",
+      "workspaceSheet": "artifacts/imagegen/p2/Stretching.png",
+      "prompt": "Use case: stylized-concept. Asset type: desktop pet PNG animation sprite sheet. Input image 1: identity reference white curly Bichon Frise with red narrow collar and small yellow round bell. Image 2: anatomy, fur texture, proportions reference. Generate the SAME realistic soft fluffy white dog, black nose, round dark eyes, matching proportions, lighting and photographic illustration style. Six sequential animation keyframes of a dog doing a play-bow stretch, three-quarter view facing left: standing, forelegs advancing, chest lowering, full stretch with hindquarters up and fluffy tail curled, rising, standing recovered. EXACTLY 3 columns by 2 rows of equal square cells, six complete full body poses, row-major chronological order, 3:2 aspect ratio. Stable body size, center and paw baseline at 88% cell height. Generous transparent margins, no overlap across cells. Transparent RGBA, no floor/shadow/grid/labels/text/watermark/scenery. No extra props except the food bowl if requested. No leash, no human. Genuine transparent fur edges, no painted checkerboard. Functional game sprite sheet to split into six frames."
+    },
+    {
+      "action": "Yawning",
+      "source": "exec-df596db6-ffa0-4724-b6df-9101ecbbaa46.png",
+      "workspaceSheet": "artifacts/imagegen/p2/Yawning.png",
+      "prompt": "Use case: stylized-concept. Asset type: desktop pet PNG animation sprite sheet. Input image 1: identity reference white curly Bichon Frise with red narrow collar and small yellow round bell. Image 2: anatomy, fur texture, proportions reference. Generate the SAME realistic soft fluffy white dog, black nose, round dark eyes, matching proportions, lighting and photographic illustration style. Six sequential animation keyframes of a sleepy sitting dog yawning, front three-quarter view: drowsy, mouth starting to open, wide natural canine yawn, peak yawn with eyes closed, mouth closing, peaceful recovered. EXACTLY 3 columns by 2 rows of equal square cells, six complete full body poses, row-major chronological order, 3:2 aspect ratio. Stable body size, center and paw baseline at 88% cell height. Generous transparent margins, no overlap across cells. Transparent RGBA, no floor/shadow/grid/labels/text/watermark/scenery. No extra props except the food bowl if requested. No leash, no human. Genuine transparent fur edges, no painted checkerboard. Functional game sprite sheet to split into six frames."
+    },
+    {
+      "action": "Dragging",
+      "source": "exec-96094c9e-303d-4306-91d5-8a5c2071fe3b.png",
+      "workspaceSheet": "artifacts/imagegen/p2/Dragging.png",
+      "prompt": "Use case: stylized-concept. Asset type: desktop pet PNG animation sprite sheet. Input image 1: identity reference white curly Bichon Frise with red narrow collar and small yellow round bell. Image 2: anatomy, fur texture, proportions reference. Generate the SAME realistic soft fluffy white dog, black nose, round dark eyes, matching proportions, lighting and photographic illustration style. Six sequential animation keyframes of a dog gently being lifted, front-facing: small front paws hanging, surprised wide eyes, head tilted left, head upright, head tilted right, paws slightly curled. No human or hand. Friendly and relaxed; no distress. EXACTLY 3 columns by 2 rows of equal square cells, six complete full body poses, row-major chronological order, 3:2 aspect ratio. Stable body size, center and paw baseline at 88% cell height. Generous transparent margins, no overlap across cells. Transparent RGBA, no floor/shadow/grid/labels/text/watermark/scenery. No extra props except the food bowl if requested. No leash, no human. Genuine transparent fur edges, no painted checkerboard. Functional game sprite sheet to split into six frames."
+    },
+    {
+      "action": "Looking",
+      "source": "exec-5793209f-eee6-406c-bd1b-65159b8e974d.png",
+      "workspaceSheet": "artifacts/imagegen/p2/Looking.png",
+      "prompt": "Use case: stylized-concept. Asset type: desktop pet PNG animation sprite sheet. Input image 1: identity reference white curly Bichon Frise with red narrow collar and small yellow round bell. Image 2: anatomy, fur texture, proportions reference. Generate the SAME realistic soft fluffy white dog, black nose, round dark eyes, matching proportions, lighting and photographic illustration style. Six matched poses for a dog looking toward the mouse, seated front-facing body fixed: row one three subtly animated poses with head and eyes turned left; row two three subtly animated poses with head and eyes turned right. Body and paws always front facing; only head rotates. EXACTLY 3 columns by 2 rows of equal square cells, six complete full body poses, row-major chronological order, 3:2 aspect ratio. Stable body size, center and paw baseline at 88% cell height. Generous transparent margins, no overlap across cells. Transparent RGBA, no floor/shadow/grid/labels/text/watermark/scenery. No extra props except the food bowl if requested. No leash, no human. Genuine transparent fur edges, no painted checkerboard. Functional game sprite sheet to split into six frames."
+    }
+  ]
+}

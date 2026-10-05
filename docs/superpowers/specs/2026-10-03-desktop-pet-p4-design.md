@@ -1,0 +1,20 @@
+# P4 design: screens, skins, startup, precise clicks, toys, home, journal
+
+Authorization: user selected 1/2/3/4 followed by 6/7/9 from the ten-item suggestions. Finish both groups, preserve P3 settings and release. Conditional authorization: if usage is exhausted, consume the available reset credit expiring October 4, only if that exact credit and exhausted state can be verified through supported account APIs.
+
+## Foundation (first group)
+
+- Multi-monitor: list real monitors, choose one, optionally drag between them, remember monitor and position; disconnected monitor falls back to primary. Use physical native positions at the Windows boundary and monitor-relative DIP coordinates in pure movement geometry; PerMonitorV2 manifest and actual monitor DPI conversion. Fullscreen and bubbles track the pet's screen. Relative activity regions remain valid on each screen.
+- Skin manager: default bichon plus import folder/ZIP to LocalAppData/DesktopPet/skins, previews, metadata and missing-action warnings, switch without restarting. PNG-only frames and optional skin.json; require usable Idle, check PNG headers/dimensions, limits and safe ZIP paths, reject links/traversal/unknown payloads. Optional actions use existing fallback. Imported files independent of source; use GUID IDs, stage install atomically. WPF fully decodes before switching; failed switch preserves working skin. No executable skin plugins.
+- Startup and recovery: opt-in HKCU Run entry pointing at current EXE, current status/error shown in settings; default off. Duplicate launch signals existing instance to show/restore visibility, respecting fullscreen; one-click reset position/disable click-through for recovery. No machine-wide registry changes or installer.
+- Precise clicks: sample displayed frame alpha within transformed Image bounds; background alpha zero, WM_NCHITTEST for transparent pixels plus cursor-tracking native pass-through so other-process windows can receive clicks. Captured drag overrides pixel filtering; global manual click-through remains supported. JPG fallback cannot create alpha transparency. Cache frame pixels, no allocation on every mouse event.
+
+## Fun and continuity (after foundation)
+
+- Toys: ball and frisbee menu/settings controls. Throw object in chosen activity area, bounce/rotate visibly; pet walks to it and responds when caught. Works with auto behavior paused; hide/fullscreen, drag, interaction, skin/screen change or disabling toys cancels and hides object. Use existing walking/happy animations and native WPF-drawn props, no additional bitmap generation needed.
+- Home: optional click-through nest/mat and bowl, relative position within chosen screen/activity area, choose basic cozy colors. Return-home action moves pet to nest and sleeps; night sleep can use the same home when enabled. Props follow size/screen/topmost/visibility. Small ranges fit inward and never strand props on another monitor.
+- Journal and achievements: persistent local visited days, interaction/feed/play/focus/home counters, chronological diary capped at 200, six milestones with progress and unlocked reward dialogue. Separate toggle can stop recording without disabling existing care. Old profile gets defaults, malformed nested state normalizes safely. No offline punishment or forced daily streaks. Expose diary/progress/reward lines in a new settings tab.
+
+## Integration and testing
+
+Core supplies monitor coordinate geometry, safe skin catalog, journal policy and toy trajectory. Native WPF services own DPI/window hooks, startup registry, instance event, world prop windows, timers and disposal. Root coordinates WPF integration; independent skin and journal modules can be implemented in separate file ownership scopes. No Git available: source snapshot before implementation, separate P4 staged release and ZIP. Tests first for pure behavior, actual WPF integration checks for user-visible controls/windows and native APIs; original xUnit dependency restriction remains an honest limitation. Mock monitor fixtures validate mixed-DPI math; actual hardware coverage is reported explicitly.

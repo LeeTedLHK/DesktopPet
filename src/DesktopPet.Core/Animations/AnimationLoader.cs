@@ -26,7 +26,31 @@ public sealed class AnimationLoader
         {
             var frames = directFrames[kind];
             var isFallback = false;
-            if (frames.Count == 0 && kind is (AnimationKind.WalkLeft or AnimationKind.WalkRight) &&
+            if (frames.Count == 0 && (int)kind >= (int)AnimationKind.StartLeft)
+            {
+                var left = kind.ToString().EndsWith("Left", StringComparison.Ordinal);
+                var candidates = new[] { left ? AnimationKind.WalkLeft : AnimationKind.WalkRight, AnimationKind.Walk };
+                foreach (var candidate in candidates)
+                {
+                    if (directFrames[candidate].Count == 0) continue;
+                    frames = directFrames[candidate]; isFallback = true;
+                    _log($"Animation '{kind}' is missing; using {candidate} frames.");
+                    break;
+                }
+            }
+            if (frames.Count == 0 && kind is (AnimationKind.RunLeft or AnimationKind.RunRight))
+            {
+                var walkKind = kind == AnimationKind.RunLeft ? AnimationKind.WalkLeft : AnimationKind.WalkRight;
+                if (directFrames[walkKind].Count > 0)
+                {
+                    frames = directFrames[walkKind];
+                    isFallback = true;
+                    _log($"Animation '{kind}' is missing; using {walkKind} frames.");
+                }
+            }
+
+            if (frames.Count == 0 && kind is (AnimationKind.WalkLeft or AnimationKind.WalkRight or
+                AnimationKind.RunLeft or AnimationKind.RunRight) &&
                 directFrames[AnimationKind.Walk].Count > 0)
             {
                 frames = directFrames[AnimationKind.Walk];

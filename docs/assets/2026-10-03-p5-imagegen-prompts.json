@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-03",
+  "phase": "P5",
+  "generator": "built-in tools.image_gen__imagegen",
+  "intent": "generate separate reference-based left and right eight-frame walk sheets",
+  "transparent_background": true,
+  "references": [
+    "src/DesktopPet/Assets/Pet/pet.jpg",
+    "src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+  ],
+  "attempts": [
+    {
+      "action": "WalkLeft",
+      "version": 1,
+      "prompt": "Use case: stylized-concept\nAsset type: production desktop pet animation sprite sheet, 8-frame WALK LEFT cycle.\nReference image 1 pet.jpg: preserve this bichon's round fluffy head, small dark eyes, black nose, short floppy ears, white curl fur, red patterned collar and small round yellow bell. Reference image 2 three-view: accurate bichon side silhouette and believable leg/body anatomy. References only, no reference background.\nCreate exactly ONE landscape 1536x768 RGBA sprite sheet on a genuinely TRANSPARENT background, 4 equal square columns by 2 equal square rows, no gutters or margins between the 384x384 invisible cells. Exactly one complete dog per cell, eight dogs total. Frames ordered left to right top row, then left to right bottom row.\nAll eight frames EXACT strict left-facing profile, nose points LEFT, tail on RIGHT; locked orthographic side camera. Full body and paws, gently curled fluffy tail. Rounded head, elegant healthy dog anatomy with visible moderately long legs and natural space beneath belly, not squat and not stretched. Fluffy realistic hand-detailed white curls, soft dimensional lighting, clean high-quality fur tips and natural silhouette. Match the existing pet's realistic cute appearance; no cartoon outlines.\nDog walks calmly on all FOUR legs in place; genuine smooth eight sequential phases of ONE cyclic quadruped walk, alternating front and rear paws with clear contact, down, passing, push-off, then opposite legs: frame 1 near front forward contact / near rear back; 2 weight settles; 3 paws pass below body; 4 near front pushes back / near rear reaches forward; 5 opposite limb contact; 6 opposite weight settles; 7 opposite paws pass; 8 returns smoothly toward phase 1. Small natural step length, no leaps or giant stretching poses. Far legs visible behind near legs. Body/head/collar/tail identity and volume remain CONSISTENT, modest 1-2% bob only, no scaling or turning between frames. Paw positions change, rigid body silhouette mostly stable.\nPrecise cell registration: same body center and scale in all cells, dog spans roughly x=35..350 and y=42..345 within each 384 square, standing foot contact baseline at y=345. Keep at least 20px clear transparent padding all around dog in each cell. The dog stays centered, does not travel across the cells.\nNO scenery, ground, floor, shadows, objects, text, numbers, grid lines, checkerboard pattern, watermark, borders, background color, extra limbs, deformed paws, front view, head turns. Genuine alpha=0 outside fur, preserve semi-transparent fur edges.",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a0ffbc-13d1-7611-b505-e0ff3e688750/exec-9f25d50d-a21c-4fce-94e1-a850544184a5.png",
+      "persisted": "artifacts/imagegen/p5/WalkLeft-v1.png",
+      "selected": false
+    },
+    {
+      "action": "WalkLeft",
+      "version": 2,
+      "prompt": "Use case: stylized-concept\nAsset type: production desktop pet animation sprite sheet, 8-frame WALK LEFT cycle.\nReference image 1 pet.jpg: preserve this bichon's round fluffy head, small dark eyes, black nose, short floppy ears, white curl fur, red patterned collar and small round yellow bell. Reference image 2 three-view: accurate bichon side silhouette and believable leg/body anatomy. References only, no reference background.\nCreate exactly ONE landscape 1536x768 RGBA sprite sheet on a genuinely TRANSPARENT background, 4 equal square columns by 2 equal square rows, no gutters or margins between the 384x384 invisible cells. Exactly one complete dog per cell, eight dogs total. Frames ordered left to right top row, then left to right bottom row.\nAll eight frames EXACT strict left-facing profile, nose points LEFT, tail on RIGHT; locked orthographic side camera. Full body and paws, gently curled fluffy tail. Rounded head, elegant healthy dog anatomy with visible moderately long legs and natural space beneath belly, not squat and not stretched. Fluffy realistic hand-detailed white curls, soft dimensional lighting, clean high-quality fur tips and natural silhouette. Match the existing pet's realistic cute appearance; no cartoon outlines.\nDog walks calmly on all FOUR legs in place; genuine smooth eight sequential phases of ONE cyclic quadruped walk, alternating front and rear paws with clear contact, down, passing, push-off, then opposite legs: frame 1 near front forward contact / near rear back; 2 weight settles; 3 paws pass below body; 4 near front pushes back / near rear reaches forward; 5 opposite limb contact; 6 opposite weight settles; 7 opposite paws pass; 8 returns smoothly toward phase 1. Small natural step length, no leaps or giant stretching poses. Far legs visible behind near legs. Body/head/collar/tail identity and volume remain CONSISTENT, modest 1-2% bob only, no scaling or turning between frames. Paw positions change, rigid body silhouette mostly stable.\nPrecise cell registration: same body center and scale in all cells, dog spans roughly x=35..350 and y=42..345 within each 384 square, standing foot contact baseline at y=345. Keep at least 20px clear transparent padding all around dog in each cell. The dog stays centered, does not travel across the cells.\nNO scenery, ground, floor, shadows, objects, text, numbers, grid lines, checkerboard pattern, watermark, borders, background color, extra limbs, deformed paws, front view, head turns. Genuine alpha=0 outside fur, preserve semi-transparent fur edges.\nCRITICAL quality correction: only dog pixels may exist in each cell. Absolutely no detached specks, floating fur clumps, surrounding white patches, black pixels, halos or transparent-looking painted background. Smooth clean alpha edge, tiny curls attached to body only. Calm SHORT STEP walk with naturally bent paws, no fully extended diagonal leg pose. Long torso should be realistic and compact, head to rump length approx 1.35x head to feet height. Every dog is fully contained in its cell with ample 8% transparent padding. Same head and back coordinates across all eight. Pure side profile, one eye visible.",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a0ffbc-13d1-7611-b505-e0ff3e688750/exec-13364429-ec81-45d6-ac3c-21c68339be8c.png",
+      "persisted": "artifacts/imagegen/p5/WalkLeft.png",
+      "selected": true
+    },
+    {
+      "action": "WalkRight",
+      "version": 1,
+      "prompt": "Use case: stylized-concept. Asset type: transparent eight-frame desktop pet WALK RIGHT sprite sheet.\nReference 1 is the real bichon identity (white curls, round fluffy head, short ears, dark eye/nose, red patterned collar with yellow round bell). Reference 2 is accurate dog proportions. Reference 3 shows the matching left walk sheet: keep the exact same dog's appearance, proportions, fluffy fur rendering and stable camera scale, but create a NEW RIGHT-facing walk cycle.\nExactly one RGBA sprite sheet with a genuinely transparent background, aspect ratio 2:1, preferably1536x768, 4 columns by2 rows, eight equal square invisible cells. One dog per cell, eight total, ordered top row then bottom row.\nEVERY frame is exact RIGHT-facing profile: nose RIGHT and curled tail LEFT. One visible eye. Full body, all four legs, no turn or front view. Detailed realistic soft curly white fur; rounded head, short floppy ears, black eye, black nose, red patterned collar, yellow bell. Healthy believable bichon with moderately long legs and natural space beneath belly.\nAll eight cells have identical framing and scale. Dog occupies x=30..350,y=45..345 within its384-square cell, 20px minimum transparent margin. Standing paw baseline y=345, body center/head/back stay fixed with very modest natural bob, silhouette volumes stay consistent.\nAnimate a calm NATURAL quadruped walk IN PLACE, eight successive EVENLY spaced phases of one complete loop. Smooth SHORT steps, no long stretched-leg pose. A clearly different yet incremental paw position in every frame. Near front and far rear paws advance together while near rear and far front move back, then reverse. Frame1 forward contact,2 weight transfer,3 passing below shoulders,4 rearward push,5 opposite paw forward contact,6 opposite weight transfer,7 opposite passing,8 opposite push returning smoothly to1. Far paws remain visible but properly occluded. Modest leg flex and paw lift; no leap, no sliding body, no limbless blobs or extra legs. Keep fur attached and subtle movement.\nOnly isolated dogs and actual alpha transparency. No floor, ground, contact shadows, grid, cell lines, numbers, text, checkerboard, colored backdrop, scenery, floating pixels, halos, watermark. Preserve realistic fur tips with clean semi-transparent edges.",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a0ffbc-13d1-7611-b505-e0ff3e688750/exec-06d18f3e-921a-4590-a56f-10766e5b6594.png",
+      "persisted": "artifacts/imagegen/p5/WalkRight-v1.png",
+      "selected": false,
+      "rejected_reason": "repetitive forward paws and row registration shift"
+    },
+    {
+      "action": "WalkRight",
+      "version": 2,
+      "prompt": "Create a professional bichon frise WALK RIGHT eight-frame animation sheet, TRUE TRANSPARENT RGBA, 4x2 equal SQUARE cells, 1536x768 landscape. Dog identity/style from supplied references: round fluffy white head, curly white realistic fur, short ears, black eye/nose, red collar with gold yellow bell, curled tail. Strict RIGHT facing side profile in ALL eight frames, nose right, tail left. Head is unchanged, body compact and realistic, natural legs underneath.\nPRIORITY: Eight DIFFERENT sequential animation poses, full cyclic alternating four-legged walk. NO duplicated forward-reaching front leg in every frame. The NEAR front leg must complete its whole forward-to-backward step. Reading cells top left to bottom right:\n1 near front paw reaches forward RIGHT and makes ground contact; near rear paw behind to LEFT; other two opposite.\n2 near front paw is beneath shoulder; near rear lifts and moves toward body.\n3 near front paw is BEHIND shoulder to LEFT; near rear swings toward RIGHT.\n4 near front paw pushes behind body to LEFT and lifts; near rear reaches forward RIGHT and lands.\n5 near front paw lifted and bends under chest; FAR front paw reaches forward RIGHT, near rear moves behind.\n6 near front paw passing under chest; far front paw underneath shoulder; near rear paw under hips.\n7 near front paw swings forward RIGHT while FAR front paw is BACK to LEFT; near rear behind LEFT.\n8 near front paw nearly contacts forward RIGHT to join smoothly to frame1; far front pushes back.\nThe head and torso and tail are visually FIXED across frames, only leg articulation and tiny natural bob. Legs have modest bent joints and VERY SHORT stride, not exaggerated stretching or running. Preserve FOUR paws, hide far upper limbs naturally behind the body. Grounded calm walk, leg actions are incremental and smooth.\nEach dog centered identically within its cell, SAME SCALE and SAME FRAME coordinates. Every dog's top of head y=48 and paw contact baseline y=340 in its384x384 local square cell; nose x=342, tail x=38. SAME vertical registration in BOTH ROWS, no shift on bottom row. Every dog fully isolated in its cell with 30 pixels minimum transparent margin; no clipping.\nFine realistic soft white curls, gentle dimensional studio lighting and crisp attached fur tips. Transparent empty areas must be clean alpha0. NO backdrop or checkerboard texture or white matte, no floor, ground shadow, text, labels, grid, borders, unrelated specks, head turn or extra legs.",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a0ffbc-13d1-7611-b505-e0ff3e688750/exec-fde0d49d-2230-4b1b-9ca2-934c963d43e2.png",
+      "persisted": "artifacts/imagegen/p5/WalkRight-v2.png",
+      "selected": false,
+      "rejected_reason": "near-cell-boundary nose/tail pixels after slicing"
+    },
+    {
+      "action": "WalkRight",
+      "version": 3,
+      "prompt": "Create a TRANSPARENT PNG 8-frame right-walking bichon frise sprite sheet. Four columns, two rows, landscape 2:1 image, 1536x768 preferred. Eight equal 384x384 square cells. TRANSPARENT PADDING IS CRITICAL: dog in each cell is SMALLER, only 280 pixels wide and 245 pixels tall; center dog at x192,y204. Nose must end at x332, tail must begin at x52, top of head y80, foot contact baseline y325. 50 pixels of empty transparent padding on both left and right sides of EVERY cell. Never let any dog pixels cross a cell boundary. All eight dogs same size and same registration.\nSame realistic white curly-fur bichon from reference photos, round head, small floppy ears, black eye and nose, red patterned collar, small yellow bell, curled tail, healthy normal dog anatomy with distinct moderate legs below belly. Precise side profile facing RIGHT in every frame. Cute realistic plush fine curls, soft diffuse lighting, fine fur edges; no cartoon or flat illustration.\nEight smoothly progressing phases of ONE natural relaxed four-legged walk IN PLACE. Slightly different leg pose every frame. Head/torso position fixed. Animate near FRONT paw from forward ground contact (1), beneath shoulder (2), behind shoulder (3), lifted behind (4), bent passing under chest (5), swinging forward (6), reaching front (7), ready to contact (8). Near BACK leg does opposite phase and far legs alternate with near legs. Four anatomically correct legs, small natural paw lifts and short stride, modest body bob. No stretching body or leaps. Frame8 joins frame1 continuously.\nCreate ONLY the isolated dog silhouettes on actual transparent alpha0 surroundings. No ground, shadow, scenery, gridlines, labels, numbers, text, extra pixels, checkerboard texture or watermark. Keep ALL full silhouettes including nose tail and paws within their own individual square cells with generous clear padding.",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a0ffbc-13d1-7611-b505-e0ff3e688750/exec-fff104a1-3214-41be-9752-045a81e02e79.png",
+      "persisted": "artifacts/imagegen/p5/WalkRight.png",
+      "selected": true
+    }
+  ],
+  "packaging": {
+    "script": "scripts/prepare-p5-assets.py",
+    "method": "4x2 equal-cell crop; uniform whole-cell LANCZOS resize to220x220 for all Left cells and256x256 for all Right cells, pasted on256x256 RGBA canvas; fixed left offset18,22 then full-frame integer vertical translations registering alpha>127 contact foot bbox bottom to228 for both directions; original generated alpha retained; no masking, synthetic poses, individual body-part or silhouette resizing, mirroring or interpolation",
+    "runtime_directories": [
+      "src/DesktopPet/Assets/Pet/WalkLeft",
+      "src/DesktopPet/Assets/Pet/WalkRight"
+    ],
+    "frames_per_direction": 8,
+    "common_framing": {
+      "WalkLeft": {
+        "whole_cell_size": 220,
+        "canvas_offset": [
+          18,
+          22
+        ]
+      },
+      "WalkRight": {
+        "whole_cell_size": 256,
+        "canvas_offset": [
+          0,
+          0
+        ]
+      },
+      "contact_baseline": 228
+    }
+  },
+  "review": {
+    "visual": "Every frame shows the same direction in side view. Alpha-composited fur silhouettes remain complete. Paw contact baseline is constant228 for all16 frames; residual head/torso bob5px left and3px right plus mild generated fur/face/pose variation remain. Eight poses contain distinct contacts/passes/lifts but are not a hand-rigged biomechanically exact gait.",
+    "previews": [
+      "artifacts/imagegen/p5/WalkLeft-contact.png",
+      "artifacts/imagegen/p5/WalkRight-contact.png",
+      "artifacts/imagegen/p5/walk-both-loop.gif"
+    ],
+    "quantitative": "artifacts/imagegen/p5/validation.json",
+    "quantitative_summary": {
+      "WalkLeft": {
+        "visible_head_top_range": [
+          58,
+          63
+        ],
+        "visible_foot_bottom_range": [
+          228,
+          228
+        ],
+        "visible_width_range": [
+          199,
+          204
+        ],
+        "full_frame_y_translations": [
+          5,
+          3,
+          4,
+          5,
+          7,
+          7,
+          7,
+          9
+        ]
+      },
+      "WalkRight": {
+        "visible_head_top_range": [
+          62,
+          65
+        ],
+        "visible_foot_bottom_range": [
+          228,
+          228
+        ],
+        "visible_width_range": [
+          206,
+          214
+        ],
+        "full_frame_y_translations": [
+          7,
+          6,
+          6,
+          7,
+          7,
+          9,
+          6,
+          6
+        ]
+      }
+    }
+  }
+}

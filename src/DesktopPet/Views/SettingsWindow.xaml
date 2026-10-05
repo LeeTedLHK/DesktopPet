@@ -1,7 +1,7 @@
 <Window x:Class="DesktopPet.Views.SettingsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="DesktopPet 设置" Width="480" Height="620" MinWidth="400" MinHeight="300"
+        Title="DesktopPet 设置" Width="560" Height="740" MinWidth="400" MinHeight="300"
         WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"
         Background="#F4F6F5" FontFamily="Microsoft YaHei UI" FontSize="13"
         Foreground="#243C36">
@@ -28,17 +28,58 @@
                 <TextBlock Text="DesktopPet" FontSize="25" FontWeight="SemiBold" />
                 <TextBlock Text="设置你的桌面陪伴" Style="{StaticResource Hint}" Margin="0,5,0,0" />
             </StackPanel>
-            <TextBlock Text="0.1.0" HorizontalAlignment="Right" VerticalAlignment="Center"
+            <TextBlock x:Name="VersionBadge" HorizontalAlignment="Right" VerticalAlignment="Center"
                        Foreground="#6B8279" />
         </Grid>
         <Grid DockPanel.Dock="Bottom" Margin="0,16,0,0">
+            <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
             <TextBlock x:Name="SaveStatus" Text="修改后立即生效，自动保存" VerticalAlignment="Center"
-                       Style="{StaticResource Hint}" MaxWidth="270" HorizontalAlignment="Left" />
-            <Button Content="完成" HorizontalAlignment="Right" Width="78" Height="32"
+                       Style="{StaticResource Hint}" MaxWidth="270" HorizontalAlignment="Left" Margin="0,0,12,0" />
+            <Button Content="完成" Grid.Column="1" HorizontalAlignment="Right" Width="78" Height="32"
                     Click="OnDone" IsCancel="True" />
         </Grid>
+        <TabControl x:Name="SettingsTabs" Background="Transparent" BorderThickness="0" Padding="0,10,0,0">
+        <TabItem Header="外观与互动">
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
             <StackPanel>
+                <Border Background="White" CornerRadius="10" Padding="18,12" Margin="0,0,0,14">
+                    <StackPanel>
+                        <TextBlock Text="不打扰模式" FontWeight="SemiBold" Margin="0,0,0,5" />
+                        <CheckBox x:Name="FullscreenAutoHideCheck" Content="全屏游戏或视频时自动隐藏"
+                                  Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <CheckBox x:Name="ClickThroughCheck" Content="鼠标穿透，让操作落到下方窗口"
+                                  Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <CheckBox x:Name="GlobalHotkeysCheck" Content="启用全局快捷键"
+                                  Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <TextBlock x:Name="HotkeyStatus" Text="Ctrl+Alt+P 显示/隐藏 · Ctrl+Alt+M 鼠标穿透"
+                                   Style="{StaticResource Hint}" Margin="0,6,0,3" />
+                        <TextBlock Text="全屏结束后恢复显示；手动隐藏会保持隐藏。穿透时可从系统托盘关闭穿透、摸头或喂食。"
+                                   Style="{StaticResource Hint}" Margin="0,3,0,0" />
+                    </StackPanel>
+                </Border>
+                <Border Background="White" CornerRadius="10" Padding="18,12" Margin="0,0,0,14">
+                    <StackPanel>
+                        <TextBlock Text="互动与作息" FontWeight="SemiBold" Margin="0,0,0,5" />
+                        <CheckBox x:Name="SpeechBubblesCheck" Content="显示互动气泡"
+                                  Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <CheckBox x:Name="NaturalBehaviorsCheck" Content="随机伸懒腰、打哈欠"
+                                  Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <CheckBox x:Name="CursorTrackingCheck" Content="鼠标靠近时看看鼠标"
+                                  Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <CheckBox x:Name="NightSleepCheck" Content="夜间睡觉，白天恢复活动"
+                                  Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <StackPanel Orientation="Horizontal" Margin="0,5,0,8">
+                            <TextBlock Text="睡眠时段" VerticalAlignment="Center" Margin="0,0,12,0" />
+                            <ComboBox x:Name="SleepStartCombo" Width="85" SelectionChanged="OnSelectionChanged"
+                                      AutomationProperties.Name="开始睡眠时间" />
+                            <TextBlock Text="至" VerticalAlignment="Center" Margin="10,0" />
+                            <ComboBox x:Name="SleepEndCombo" Width="85" SelectionChanged="OnSelectionChanged"
+                                      AutomationProperties.Name="结束睡眠时间" />
+                        </StackPanel>
+                        <TextBlock Text="点头部摸头，点身体玩耍，右键或托盘喂食。摸头可以叫醒睡着的宠物；同一时间表示全天不安排夜间睡眠。"
+                                   Style="{StaticResource Hint}" />
+                    </StackPanel>
+                </Border>
                 <Border Background="White" CornerRadius="10" Padding="18,12" Margin="0,0,0,14">
                     <StackPanel>
                         <TextBlock Text="显示与行为" FontWeight="SemiBold" Margin="0,0,0,5" />
@@ -58,14 +99,17 @@
                             <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition Width="155" /></Grid.ColumnDefinitions>
                             <TextBlock Text="动画速度" VerticalAlignment="Center" />
                             <ComboBox x:Name="AnimationSpeedCombo" Grid.Column="1" SelectionChanged="OnSelectionChanged"
-                                      AutomationProperties.Name="动画速度">
-                                <ComboBoxItem Content="慢（0.75x）" />
-                                <ComboBoxItem Content="正常（1x）" />
-                                <ComboBoxItem Content="快（1.5x）" />
-                            </ComboBox>
+                                      ItemStringFormat="{}{0:G}×" AutomationProperties.Name="动画速度倍数" />
                         </Grid>
+                        <TextBlock Text="1× 为正常速度，可选择 0.25×–3×；已保存的自定义速度会保留。"
+                                   Style="{StaticResource Hint}" Margin="0,4,0,0" />
                         <TextBlock Text="关闭后保留静态图、点击反馈和自动移动；缺少帧时会自动使用默认图片。"
                                    Style="{StaticResource Hint}" Margin="0,4,0,0" />
+                        <CheckBox x:Name="PowerSavingCheck" Content="省电模式"
+                                  AutomationProperties.Name="省电模式"
+                                  Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <TextBlock Text="只降低待机、睡觉动画帧率，互动动作和专注计时照常。"
+                                   Style="{StaticResource Hint}" />
                     </StackPanel>
                 </Border>
                 <Border Background="White" CornerRadius="10" Padding="18,16">
@@ -108,5 +152,362 @@
                 </Border>
             </StackPanel>
         </ScrollViewer>
+        </TabItem>
+        <TabItem Header="陪伴与专注">
+        <ScrollViewer x:Name="CompanionScroll" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel>
+                <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                    <StackPanel>
+                        <TextBlock Text="我的小伙伴" FontWeight="SemiBold" />
+                        <Grid Margin="0,12,0,6">
+                            <Grid.ColumnDefinitions><ColumnDefinition Width="90" /><ColumnDefinition /></Grid.ColumnDefinitions>
+                            <TextBlock Text="宠物名字" VerticalAlignment="Center" />
+                            <TextBox x:Name="PetNameText" Grid.Column="1" Padding="8,6"
+                                     TextChanged="OnNameChanged" LostKeyboardFocus="OnNameFocusLost"
+                                     ToolTip="最多20个显示字符，支持完整 emoji" AutomationProperties.Name="宠物名字" />
+                        </Grid>
+                        <CheckBox x:Name="GrowthCheck" Content="开启轻量养成" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <TextBlock x:Name="CareSummary" Text="亲密度 20 · 饱腹 70 · 精力 80" Margin="0,6,0,8" />
+                        <Grid>
+                            <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions>
+                            <ProgressBar x:Name="AffectionBar" Height="7" Maximum="100" Margin="0,0,8,0" Foreground="#D89591" AutomationProperties.Name="亲密度" />
+                            <ProgressBar x:Name="FullnessBar" Grid.Column="1" Height="7" Maximum="100" Margin="0,0,8,0" Foreground="#DAAE63" AutomationProperties.Name="饱腹" />
+                            <ProgressBar x:Name="EnergyBar" Grid.Column="2" Height="7" Maximum="100" Foreground="#74A596" AutomationProperties.Name="精力" />
+                        </Grid>
+                        <TextBlock Text="摸头、玩耍增加亲密度，喂食补充饱腹，睡觉恢复精力。离线和隐藏时不扣数值；关闭后保留互动。" Style="{StaticResource Hint}" Margin="0,12,0,0" />
+                    </StackPanel>
+                </Border>
+                <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                    <StackPanel>
+                        <TextBlock Text="性格与活动范围" FontWeight="SemiBold" Margin="0,0,0,12" />
+                        <Grid Margin="0,0,0,12">
+                            <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition Width="185" /></Grid.ColumnDefinitions>
+                            <TextBlock Text="性格" VerticalAlignment="Center" />
+                            <ComboBox x:Name="PersonalityCombo" Grid.Column="1" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="宠物性格">
+                                <ComboBoxItem Content="默认 · 自然陪伴" /><ComboBoxItem Content="活泼 · 喜欢走动" />
+                                <ComboBoxItem Content="安静 · 多待在原地" /><ComboBoxItem Content="黏人 · 常看看鼠标" />
+                            </ComboBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition Width="185" /></Grid.ColumnDefinitions>
+                            <TextBlock Text="活动范围" VerticalAlignment="Center" />
+                            <ComboBox x:Name="ActivityCombo" Grid.Column="1" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="活动范围">
+                                <ComboBoxItem Content="整个所选屏幕工作区" /><ComboBoxItem Content="底部区域" />
+                                <ComboBoxItem Content="右下角" /><ComboBoxItem Content="自定义区域" />
+                            </ComboBox>
+                        </Grid>
+                        <StackPanel x:Name="CustomAreaPanel" Margin="0,12,0,0">
+                            <TextBlock Text="相对所选屏幕工作区的百分比" Style="{StaticResource Hint}" />
+                            <WrapPanel Margin="0,8,0,0">
+                                <TextBlock Text="左 %" VerticalAlignment="Center" Margin="0,0,6,0" />
+                                <ComboBox x:Name="AreaLeftCombo" Width="60" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="区域左边百分比" />
+                                <TextBlock Text="上 %" VerticalAlignment="Center" Margin="12,0,6,0" />
+                                <ComboBox x:Name="AreaTopCombo" Width="60" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="区域上边百分比" />
+                                <TextBlock Text="宽 %" VerticalAlignment="Center" Margin="12,0,6,0" />
+                                <ComboBox x:Name="AreaWidthCombo" Width="60" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="区域宽度百分比" />
+                                <TextBlock Text="高 %" VerticalAlignment="Center" Margin="12,0,6,0" />
+                                <ComboBox x:Name="AreaHeightCombo" Width="60" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="区域高度百分比" />
+                            </WrapPanel>
+                        </StackPanel>
+                        <TextBlock Text="拖动和自动移动都留在所选范围内。区域太小时会自动扩大，以容纳整只宠物；显示缩放或分辨率变化后仍会适配。" Style="{StaticResource Hint}" Margin="0,12,0,0" />
+                    </StackPanel>
+                </Border>
+                <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                    <StackPanel>
+                        <TextBlock Text="健康小提醒" FontWeight="SemiBold" Margin="0,0,0,8" />
+                        <Grid Margin="0,0,0,5">
+                            <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition Width="135" /></Grid.ColumnDefinitions>
+                            <CheckBox x:Name="WaterReminderCheck" Content="喝水" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <ComboBox x:Name="WaterIntervalCombo" Grid.Column="1" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="喝水提醒间隔" />
+                        </Grid>
+                        <Grid Margin="0,0,0,5">
+                            <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition Width="135" /></Grid.ColumnDefinitions>
+                            <CheckBox x:Name="MoveReminderCheck" Content="起身走动" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <ComboBox x:Name="MoveIntervalCombo" Grid.Column="1" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="起身提醒间隔" />
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition Width="135" /></Grid.ColumnDefinitions>
+                            <CheckBox x:Name="RestReminderCheck" Content="放松眼睛" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <ComboBox x:Name="RestIntervalCombo" Grid.Column="1" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="休息提醒间隔" />
+                        </Grid>
+                        <TextBlock Text="用宠物气泡提醒，需开启互动气泡。全屏、隐藏或互动中延后；过期提示丢弃，提醒至少间隔两分钟。" Style="{StaticResource Hint}" Margin="0,10,0,0" />
+                        <WrapPanel Margin="0,12,0,0">
+                            <Button x:Name="Snooze15Button" Content="延后15分钟" Tag="15" Click="OnSnoozeReminders" Padding="10,7" Margin="0,0,8,8" />
+                            <Button x:Name="Snooze30Button" Content="延后30分钟" Tag="30" Click="OnSnoozeReminders" Padding="10,7" Margin="0,0,8,8" />
+                            <Button x:Name="Snooze60Button" Content="延后60分钟" Tag="60" Click="OnSnoozeReminders" Padding="10,7" Margin="0,0,8,8" />
+                            <Button x:Name="ResumeRemindersButton" Content="提前恢复" Click="OnResumeReminders" Padding="10,7" Margin="0,0,0,8" IsEnabled="False" />
+                        </WrapPanel>
+                        <TextBlock x:Name="SnoozeStatus" Text="延后只影响健康提醒，专注结束仍会提示。" Style="{StaticResource Hint}" />
+                    </StackPanel>
+                </Border>
+                <Border Background="White" CornerRadius="10" Padding="18,16">
+                    <StackPanel>
+                        <TextBlock Text="番茄钟" FontWeight="SemiBold" />
+                        <TextBlock x:Name="FocusStatus" Text="准备开始一轮专注" FontSize="17" Margin="0,12,0,14" />
+                        <ProgressBar x:Name="FocusProgressBar" Height="7" Maximum="100" Foreground="#74A596" AutomationProperties.Name="当前阶段进度" />
+                        <TextBlock x:Name="FocusDetailsText" Text="开始后可查看进度和预计结束时间。" Style="{StaticResource Hint}" Margin="0,8,0,12" />
+                        <CheckBox x:Name="FocusQuietCheck" Content="专注时安静陪伴" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                        <TextBlock Text="专注计时期间暂停自动走动和健康提醒；摸头、喂食和主动玩耍照常。暂停专注或进入休息后恢复。" Style="{StaticResource Hint}" Margin="0,0,0,12" />
+                        <WrapPanel>
+                            <TextBlock Text="专注" VerticalAlignment="Center" Margin="0,0,8,0" />
+                            <ComboBox x:Name="FocusMinutesCombo" Width="130" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="专注时长" />
+                            <TextBlock Text="休息" VerticalAlignment="Center" Margin="16,0,8,0" />
+                            <ComboBox x:Name="BreakMinutesCombo" Width="130" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="休息时长" />
+                        </WrapPanel>
+                        <WrapPanel Margin="0,10,0,0">
+                            <TextBlock Text="下一轮预设" VerticalAlignment="Center" Margin="0,0,10,8" />
+                            <Button x:Name="FocusPreset25Button" Content="25 / 5" Tag="25,5" Click="OnFocusPreset" Padding="10,6" Margin="0,0,8,8" ToolTip="下一轮：专注25分钟，休息5分钟" AutomationProperties.Name="25分钟专注5分钟休息预设" />
+                            <Button x:Name="FocusPreset45Button" Content="45 / 10" Tag="45,10" Click="OnFocusPreset" Padding="10,6" Margin="0,0,8,8" ToolTip="下一轮：专注45分钟，休息10分钟" AutomationProperties.Name="45分钟专注10分钟休息预设" />
+                            <Button x:Name="FocusPreset60Button" Content="60 / 10" Tag="60,10" Click="OnFocusPreset" Padding="10,6" Margin="0,0,0,8" ToolTip="下一轮：专注60分钟，休息10分钟" AutomationProperties.Name="60分钟专注10分钟休息预设" />
+                        </WrapPanel>
+                        <WrapPanel Margin="0,14,0,0">
+                            <Button x:Name="FocusStartButton" Content="开始专注" Click="OnFocusStart" Padding="14,7" Margin="0,0,10,0" />
+                            <Button x:Name="FocusPauseButton" Content="暂停" Click="OnFocusPause" Padding="14,7" Margin="0,0,10,0" IsEnabled="False" />
+                            <Button x:Name="FocusStopButton" Content="停止" Click="OnFocusStop" Padding="14,7" IsEnabled="False" />
+                        </WrapPanel>
+                        <TextBlock Text="专注结束自动进入休息，休息结束后等待你开始下一轮。时长修改用于下一轮；当前会话退出程序后结束。" Style="{StaticResource Hint}" Margin="0,12,0,0" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+        </TabItem>
+        <TabItem Header="屏幕与皮肤">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <StackPanel>
+                    <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="陪伴在哪块屏幕" FontWeight="SemiBold" Margin="0,0,0,10" />
+                            <ComboBox x:Name="MonitorCombo" DisplayMemberPath="DisplayName" SelectedValuePath="Id"
+                                      SelectionChanged="OnSelectionChanged" AutomationProperties.Name="宠物所在显示器" />
+                            <CheckBox x:Name="CrossMonitorCheck" Content="允许拖动到其他显示器" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <CheckBox x:Name="PreciseHitCheck" Content="只让宠物图案接收点击，透明区域可穿透" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <TextBlock Text="活动范围跟随所选屏幕；拔掉所选显示器后会自动回到主屏。" Style="{StaticResource Hint}" />
+                            <Button Content="找回宠物 / 重置位置" Click="OnResetPosition" Height="32" Margin="0,12,0,0" />
+                            <CheckBox x:Name="StartWindowsCheck" Content="登录 Windows 时自动启动" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <TextBlock x:Name="StartupStatus" Style="{StaticResource Hint}" />
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="White" CornerRadius="10" Padding="18,16">
+                        <StackPanel>
+                            <TextBlock Text="宠物与皮肤" FontWeight="SemiBold" Margin="0,0,0,10" />
+                            <ComboBox x:Name="SkinCombo" DisplayMemberPath="Name" SelectedValuePath="Id"
+                                      SelectionChanged="OnSkinSelection" AutomationProperties.Name="选择皮肤" />
+                            <Image x:Name="SkinPreview" Height="105" Margin="0,12" Stretch="Uniform" />
+                            <TextBlock x:Name="SkinDetails" Style="{StaticResource Hint}" />
+                            <WrapPanel Margin="0,12,0,8">
+                                <Button Content="导入文件夹" Click="OnImportFolder" Padding="12,5" Margin="0,0,8,8" />
+                                <Button Content="导入 ZIP" Click="OnImportZip" Padding="12,5" Margin="0,0,8,8" />
+                                <Button Content="默认比熊" Click="OnDefaultSkin" Padding="12,5" Margin="0,0,8,8" />
+                                <Button x:Name="SkinExportButton" Content="导出当前皮肤" Click="OnExportSkin" Padding="12,5" Margin="0,0,8,8" />
+                            </WrapPanel>
+                            <TextBlock Text="皮肤需要 Idle 文件夹中的 PNG 帧。缺少其他动作时会使用静止动作；导入后保存在本机。" Style="{StaticResource Hint}" />
+                            <TextBlock Text="导出的 ZIP 包含当前皮肤的动作帧、皮肤说明与可选嘴部定位；可用于另一次导入。"
+                                       Style="{StaticResource Hint}" Margin="0,6,0,0" />
+                            <TextBlock x:Name="SkinStatus" Style="{StaticResource Hint}" Margin="0,10,0,0" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+        </TabItem>
+        <TabItem Header="玩具与日记">
+            <ScrollViewer x:Name="WorldScroll" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <StackPanel>
+                    <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="一起玩，也一起休息" FontWeight="SemiBold" />
+                            <TextBlock x:Name="PlayAvailability" Style="{StaticResource Hint}" Margin="0,10,0,0" Visibility="Collapsed" />
+                            <Button x:Name="ShowPetButton" Content="显示宠物" Click="OnShowPet" HorizontalAlignment="Left"
+                                    Padding="14,6" Margin="0,8,0,8" Visibility="Collapsed" />
+                            <CheckBox x:Name="ToysCheck" Content="开启小球、飞盘和接球挑战" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <WrapPanel Margin="0,0,0,8">
+                                <Button x:Name="BallButton" Content="抛小球" Click="OnBall" Padding="14,6" Margin="0,0,10,0" />
+                                <Button x:Name="FrisbeeButton" Content="抛飞盘" Click="OnFrisbee" Padding="14,6" />
+                            </WrapPanel>
+                            <Separator Margin="0,8,0,12" />
+                            <Grid Margin="0,0,0,6">
+                                <TextBlock Text="小球大小" FontWeight="SemiBold" />
+                                <TextBlock x:Name="BallScaleLabel" Text="100%" HorizontalAlignment="Right" />
+                            </Grid>
+                            <Slider x:Name="BallScaleSlider" Minimum="60" Maximum="150" Value="100"
+                                    TickFrequency="5" IsSnapToTickEnabled="True" SmallChange="5" LargeChange="20"
+                                    AutomationProperties.Name="小球大小百分比"
+                                    ValueChanged="OnPropScaleChanged" />
+                            <Grid Margin="0,2,0,12">
+                                <TextBlock Text="60%" Style="{StaticResource Hint}" />
+                                <TextBlock Text="150%" Style="{StaticResource Hint}" HorizontalAlignment="Right" />
+                            </Grid>
+                            <Grid Margin="0,0,0,6">
+                                <TextBlock Text="飞盘大小" FontWeight="SemiBold" />
+                                <TextBlock x:Name="FrisbeeScaleLabel" Text="100%" HorizontalAlignment="Right" />
+                            </Grid>
+                            <Slider x:Name="FrisbeeScaleSlider" Minimum="60" Maximum="150" Value="100"
+                                    TickFrequency="5" IsSnapToTickEnabled="True" SmallChange="5" LargeChange="20"
+                                    AutomationProperties.Name="飞盘大小百分比"
+                                    ValueChanged="OnPropScaleChanged" />
+                            <Grid Margin="0,2,0,12">
+                                <TextBlock Text="60%" Style="{StaticResource Hint}" />
+                                <TextBlock Text="150%" Style="{StaticResource Hint}" HorizontalAlignment="Right" />
+                            </Grid>
+                            <Grid Margin="0,0,0,6">
+                                <TextBlock Text="喂食碗大小" FontWeight="SemiBold" />
+                                <TextBlock x:Name="FeedingBowlScaleLabel" Text="100%" HorizontalAlignment="Right" />
+                            </Grid>
+                            <Slider x:Name="FeedingBowlScaleSlider" Minimum="60" Maximum="150" Value="100"
+                                    TickFrequency="5" IsSnapToTickEnabled="True" SmallChange="5" LargeChange="20"
+                                    AutomationProperties.Name="喂食碗大小百分比"
+                                    ValueChanged="OnPropScaleChanged" />
+                            <Grid Margin="0,2,0,8">
+                                <TextBlock Text="60%" Style="{StaticResource Hint}" />
+                                <TextBlock Text="150%" Style="{StaticResource Hint}" HorizontalAlignment="Right" />
+                            </Grid>
+                            <TextBlock Text="玩具和喂食碗随宠物大小缩放，也可独立调节。玩具尺寸在下次抛出时生效，当前玩法继续。"
+                                       Style="{StaticResource Hint}" Margin="0,0,0,12" />
+                            <Separator Margin="0,0,0,8" />
+                            <CheckBox x:Name="HomeCheck" Content="摆放小窝、垫子和食盆" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <ComboBox x:Name="HomeThemeCombo" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="小窝颜色">
+                                <ComboBoxItem Content="奶油暖色" /><ComboBoxItem Content="薄荷绿" /><ComboBoxItem Content="玫瑰粉" />
+                            </ComboBox>
+                            <WrapPanel Margin="0,10,0,12">
+                                <TextBlock Text="位置：横向 %" VerticalAlignment="Center" Margin="0,0,6,0" />
+                                <ComboBox x:Name="HomeXCombo" Width="75" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="小窝横向位置百分比" />
+                                <TextBlock Text="纵向 %" VerticalAlignment="Center" Margin="16,0,6,0" />
+                                <ComboBox x:Name="HomeYCombo" Width="75" SelectionChanged="OnSelectionChanged" AutomationProperties.Name="小窝纵向位置百分比" />
+                            </WrapPanel>
+                            <Button x:Name="HomeButton" Content="回小窝睡觉" Click="OnHome" Height="32" />
+                            <TextBlock Text="暂停自动行为时也可以玩耍和回窝；摸摸头可以叫醒宠物。小窝跟随所选屏幕和活动范围。" Style="{StaticResource Hint}" Margin="0,12,0,0" />
+                        </StackPanel>
+                    </Border>
+                    <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="一点小惊喜" FontWeight="SemiBold" />
+                            <TextBlock Text="带我散步、挑战接球，或收藏一张今天的合影。" Style="{StaticResource Hint}" Margin="0,8,0,12" />
+                            <WrapPanel>
+                                <Button x:Name="FollowButton" Content="跟我散步 · 30秒" Click="OnFollow" Padding="12,7" Margin="0,0,8,8" />
+                                <Button x:Name="ChallengeButton" Content="三回合接球挑战" Click="OnChallenge" Padding="12,7" Margin="0,0,8,8" />
+                                <Button x:Name="StopPlayButton" Content="结束玩法" Click="OnStopPlay" Padding="12,7" Margin="0,0,0,8" />
+                            </WrapPanel>
+                            <TextBlock Text="散步时跟随当前屏幕的鼠标，靠近后停下来等待。隐藏、全屏或拖动时会结束玩法。" Style="{StaticResource Hint}" Margin="0,0,0,12" />
+                            <Border Background="#ECF2EB" CornerRadius="6" Padding="12,10">
+                                <StackPanel>
+                                    <TextBlock Text="宠物拍立得" FontWeight="SemiBold" Foreground="#33594B" />
+                                    <TextBlock Text="保存带名字与日期的照片卡，以及透明头像；只保存宠物画面。" Style="{StaticResource Hint}" Margin="0,6,0,10" />
+                                    <WrapPanel>
+                                        <Button x:Name="PhotoButton" Content="收藏此刻" Click="OnPhoto" Padding="14,6" Margin="0,0,8,0" />
+                                        <Button Content="打开相册" Click="OnOpenPhotos" Padding="14,6" />
+                                    </WrapPanel>
+                                </StackPanel>
+                            </Border>
+                            <TextBlock x:Name="PlayStatus" Style="{StaticResource Hint}" Margin="0,12,0,0" />
+                        </StackPanel>
+                    </Border>
+                    <Border Background="White" CornerRadius="10" Padding="18,16">
+                        <StackPanel>
+                            <TextBlock Text="陪伴日记" FontWeight="SemiBold" />
+                            <CheckBox x:Name="JournalCheck" Content="记录陪伴、互动与成就" Checked="OnControlChanged" Unchecked="OnControlChanged" />
+                            <TextBlock x:Name="JournalSummary" Style="{StaticResource Hint}" Margin="0,0,0,10" />
+                            <ListBox x:Name="AchievementList" MaxHeight="165" BorderBrush="#D5DFD9" AutomationProperties.Name="成就进度">
+                                <ListBox.ItemTemplate><DataTemplate>
+                                    <StackPanel Margin="4,3">
+                                        <TextBlock Text="{Binding Title}" FontWeight="SemiBold" />
+                                        <TextBlock Text="{Binding Status}" FontSize="12" Foreground="#64766F" />
+                                    </StackPanel>
+                                </DataTemplate></ListBox.ItemTemplate>
+                            </ListBox>
+                            <Button Content="听听成就专属台词" Click="OnReward" Height="32" Margin="0,10,0,14" />
+                            <TextBlock Text="查找日记" FontWeight="SemiBold" Margin="0,0,0,8" />
+                            <TextBox x:Name="JournalSearchText" Padding="8,6" TextChanged="OnJournalFilterChanged" ToolTip="搜索日记内容或类型，如喂食、玩耍" AutomationProperties.Name="日记关键词" />
+                            <WrapPanel Margin="0,8,0,0">
+                                <ComboBox x:Name="JournalKindCombo" Width="130" DisplayMemberPath="Label" SelectedValuePath="Value" SelectionChanged="OnJournalFilterSelectionChanged" Margin="0,0,8,8" AutomationProperties.Name="日记记录类型" />
+                                <ComboBox x:Name="JournalRangeCombo" Width="130" DisplayMemberPath="Label" SelectedValuePath="Value" SelectionChanged="OnJournalFilterSelectionChanged" Margin="0,0,8,8" AutomationProperties.Name="日记日期范围" />
+                                <Button x:Name="ClearJournalFilterButton" Content="清除筛选" Click="OnClearJournalFilter" Padding="10,6" Margin="0,0,0,8" />
+                            </WrapPanel>
+                            <TextBlock x:Name="JournalFilterStatus" Style="{StaticResource Hint}" Margin="0,0,0,8" />
+                            <TextBlock x:Name="JournalEmptyHint" Style="{StaticResource Hint}" Margin="0,0,0,8" Visibility="Collapsed" />
+                            <ListBox x:Name="DiaryList" MaxHeight="220" BorderBrush="#D5DFD9" AutomationProperties.Name="最近陪伴日记">
+                                <ListBox.ItemTemplate><DataTemplate>
+                                    <StackPanel Margin="4,4">
+                                        <TextBlock Text="{Binding LocalDate, StringFormat={}{0:yyyy-MM-dd}}" FontSize="11" Foreground="#64766F" />
+                                        <TextBlock Text="{Binding Text}" TextWrapping="Wrap" MaxWidth="350" />
+                                    </StackPanel>
+                                </DataTemplate></ListBox.ItemTemplate>
+                            </ListBox>
+                            <TextBlock x:Name="JournalStatus" Style="{StaticResource Hint}" Margin="0,10,0,0" />
+                            <WrapPanel Margin="0,12,0,0">
+                                <Button x:Name="ExportJournalButton" Content="导出全部日记" Click="OnExportJournal" Padding="14,7" Margin="0,0,8,8" />
+                                <Button x:Name="ExportFilteredJournalButton" Content="导出当前筛选" Click="OnExportFilteredJournal" Padding="14,7" Margin="0,0,0,8" IsEnabled="False" />
+                            </WrapPanel>
+                            <TextBlock x:Name="JournalExportStatus" Style="{StaticResource Hint}" Margin="0,8,0,0" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+        </TabItem>
+        <TabItem Header="数据与帮助">
+            <ScrollViewer x:Name="DataHelpScroll" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <StackPanel>
+                    <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="保存这份陪伴" FontWeight="SemiBold" />
+                            <TextBlock Text="备份 ZIP 包含当前设置、养成和完整日记，以及备份说明。当前专注计时会话不会保存。"
+                                       Style="{StaticResource Hint}" Margin="0,10,0,0" />
+                            <TextBlock Text="导入皮肤、照片和日志不在备份范围内。皮肤请在“屏幕与皮肤”页单独导出。"
+                                       Style="{StaticResource Hint}" Margin="0,6,0,0" />
+                            <WrapPanel Margin="0,14,0,0">
+                                <Button x:Name="BackupButton" Content="备份设置与日记" Click="OnBackup" Padding="12,7" Margin="0,0,8,8" />
+                                <Button x:Name="OpenDataButton" Content="打开数据目录" Click="OnOpenData" Padding="12,7" Margin="0,0,8,8" />
+                                <Button x:Name="OpenLogsButton" Content="打开日志目录" Click="OnOpenLogs" Padding="12,7" Margin="0,0,0,8" />
+                            </WrapPanel>
+                            <TextBlock x:Name="DataStatus" Text="备份时选择 ZIP 的保存位置；备份不会覆盖应用当前数据。"
+                                       Style="{StaticResource Hint}" Margin="0,4,0,0" />
+                            <TextBlock Text="保存失败后，养成与日记会每10秒自动重试；错误原因可在日志目录查看。"
+                                       Style="{StaticResource Hint}" Margin="0,6,0,0" />
+                        </StackPanel>
+                    </Border>
+                    <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="快捷键与找回宠物" FontWeight="SemiBold" />
+                            <TextBlock Text="Ctrl+Alt+P：显示或隐藏宠物。&#x0a;Ctrl+Alt+M：开启或关闭鼠标穿透。"
+                                       TextWrapping="Wrap" Margin="0,10,0,0" />
+                            <TextBlock Text="在“外观与互动”中启用全局快捷键；若组合键被其他程序占用，可从系统托盘操作。穿透后，宠物下方的窗口仍能接收鼠标。"
+                                       Style="{StaticResource Hint}" Margin="0,8,0,0" />
+                            <TextBlock Text="找不到宠物时，从托盘选择“找回宠物 / 重置位置”；它会回到可见区域并关闭鼠标穿透。"
+                                       Style="{StaticResource Hint}" Margin="0,6,0,0" />
+                        </StackPanel>
+                    </Border>
+                    <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="摸摸、喂食与拖动" FontWeight="SemiBold" />
+                            <TextBlock Text="左键点头部摸头，点身体一起玩；按住左键拖动宠物。右键打开菜单，可喂食、回小窝或进入设置。托盘也有这些操作。"
+                                       Style="{StaticResource Hint}" Margin="0,10,0,0" />
+                            <TextBlock Text="摸头可以叫醒宠物。刚喂食后会短暂等待，再喂时会给出提示；开启鼠标穿透时请用托盘互动。"
+                                       Style="{StaticResource Hint}" Margin="0,6,0,0" />
+                        </StackPanel>
+                    </Border>
+                    <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="小球、飞盘与散步" FontWeight="SemiBold" />
+                            <TextBlock Text="在“玩具与日记”中开启玩具，抛出小球或飞盘后，宠物会追逐、捡起或接住，再叼回出发处放下。三回合接球挑战会自动开始下一球。"
+                                       Style="{StaticResource Hint}" Margin="0,10,0,0" />
+                            <TextBlock Text="“跟我散步”会跟随当前屏幕的鼠标 30 秒，靠近后停下来等你。可点“结束玩法”提前结束；摸头、拖动和隐藏会打断玩法。开启全屏自动隐藏时，进入全屏也会打断玩法。"
+                                       Style="{StaticResource Hint}" Margin="0,6,0,0" />
+                        </StackPanel>
+                    </Border>
+                    <Border Background="White" CornerRadius="10" Padding="18,16" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="暂停、隐藏与退出" FontWeight="SemiBold" />
+                            <TextBlock Text="暂停自动行为：停止自主走动，仍可点击、拖动和玩耍；不会暂停番茄钟。专注或休息计时需要在“陪伴与专注”页单独暂停。"
+                                       Style="{StaticResource Hint}" Margin="0,10,0,0" />
+                            <TextBlock Text="隐藏宠物：暂时收起宠物，程序仍在托盘运行，专注计时继续；可用快捷键或托盘重新显示。全屏自动隐藏会在全屏结束后恢复，手动隐藏会保持隐藏。"
+                                       Style="{StaticResource Hint}" Margin="0,6,0,0" />
+                            <TextBlock Text="关闭设置窗口只收起设置。托盘中的“退出”会结束程序，也结束当前专注会话；设置、养成和日记会保存。"
+                                       Style="{StaticResource Hint}" Margin="0,6,0,0" />
+                        </StackPanel>
+                    </Border>
+                    <TextBlock x:Name="VersionReadout" Style="{StaticResource Hint}" Margin="4,0,4,4" />
+                </StackPanel>
+            </ScrollViewer>
+        </TabItem>
+        </TabControl>
     </DockPanel>
 </Window>

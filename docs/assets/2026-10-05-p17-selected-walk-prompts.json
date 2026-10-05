@@ -1,0 +1,29 @@
+{
+  "version": "P17 v2 selected",
+  "date": "2026-10-05",
+  "mode": "transparent sprite atlases, imagegen built-in",
+  "references": [
+    "src/DesktopPet/Assets/Pet/pet.jpg",
+    "src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+  ],
+  "left": {
+    "prompt": "Edit this twelve-frame LEFT-facing bichon walk atlas. Preserve every dog's face, head angle, floppy ears, curly white coat, gold bell and red collar, fluffy tail, body proportions, photographic rendering, and side 3/4 camera. Correct ONLY the walking poses and atlas spacing. The hind leg nearest camera is too rigid and nearly frozen in the reference. It must move naturally across the cycle: frames 0-2 rear stance with paw on ground traveling backward relative to pelvis, frame 3 toe-off with hock bent, frames 4-5 swing with visibly bent knee/hock and that hind paw CLEARLY lifted 15-25% of lower-leg height, frames 6-7 forward landing underneath the pelvis rather than pointing rigidly backwards, frames 8-9 weight transfer and extending stance, frames 10-11 preparing the next stride. Stagger the opposite rear leg and both forelegs to create a natural FOUR-BEAT WALK with two or three paws supporting weight, no trotting or running flight. ALL four paws must show a continuous arc and joint flexion across these 12 different chronological frames. Exaggerate the anatomy just enough that the hock bend and paw lift read at 160-pixel pet size; do not stretch a straight leg or just swing rigid sticks. Keep the spine, head size and expression stable, no head shake. Fixed torso center within every cell. Exactly FOUR equal columns and THREE equal rows; all twelve cells are square, read left-to-right then top-to-bottom. Keep each dog fully contained inside its cell: use 12% transparent padding at top and bottom and 8% at left and right; ALL ground-contact paws on the same line at 88% cell height. Keep all ears, paws and tail away from cell edges. True transparent RGBA background and fully transparent gaps, no ground, shadow, labels, grid, text, numbers or watermark. Do not alter the character design. Do not copy identical poses.",
+    "atlas": "artifacts/imagegen/p17/WalkLeft-v2-atlas.png"
+  },
+  "right": {
+    "prompt": "Edit this twelve-frame RIGHT-facing bichon walk atlas. Preserve every dog's face, head angle, floppy ears, curly white coat, gold bell and red collar, fluffy tail, body proportions, photographic rendering, and side 3/4 camera. Correct ONLY the walking poses and atlas spacing. The hind leg nearest camera is too rigid and nearly frozen in the reference. It must move naturally across the cycle: frames 0-2 rear stance with paw on ground traveling backward relative to pelvis, frame 3 toe-off with hock bent, frames 4-5 swing with visibly bent knee/hock and that hind paw CLEARLY lifted 15-25% of lower-leg height, frames 6-7 forward landing underneath the pelvis rather than pointing rigidly backwards, frames 8-9 weight transfer and extending stance, frames 10-11 preparing the next stride. Stagger the opposite rear leg and both forelegs to create a natural FOUR-BEAT WALK with two or three paws supporting weight, no trotting or running flight. ALL four paws must show a continuous arc and joint flexion across these 12 different chronological frames. Exaggerate the anatomy just enough that the hock bend and paw lift read at 160-pixel pet size; do not stretch a straight leg or just swing rigid sticks. Keep the spine, head size and expression stable, no head shake. Fixed torso center within every cell. Exactly FOUR equal columns and THREE equal rows; all twelve cells are square, read left-to-right then top-to-bottom. Keep each dog fully contained inside its cell: use 12% transparent padding at top and bottom and 8% at left and right; ALL ground-contact paws on the same line at 88% cell height. Keep all ears, paws and tail away from cell edges. True transparent RGBA background and fully transparent gaps, no ground, shadow, labels, grid, text, numbers or watermark. Do not alter the character design. Do not copy identical poses. The near hind leg is on the left side of this right-facing dog. During recovery it must visibly tuck UNDER the pelvis with the paw lifted, then extend softly into the forward contact; keep a coherent progression rather than alternate two static poses. Never mirror or flip an atlas.",
+    "atlas": "artifacts/imagegen/p17/WalkRight-v2-atlas.png"
+  },
+  "drafts": [
+    "artifacts/imagegen/p17/WalkLeft-atlas.png",
+    "artifacts/imagegen/p17/WalkRight-atlas.png"
+  ],
+  "packaging": {
+    "script": "scripts/prepare-p17-walk-assets.py",
+    "validation": "artifacts/imagegen/p17/validation.json",
+    "operations": "Whole-cell extraction, constant 0.62 isotropic scale, whole-frame translation onto 256x256; original alpha preserved; no body-part warping or mirroring.",
+    "output": "src/DesktopPet/Assets/Pet/WalkLeft and WalkRight",
+    "framesPerDirection": 12,
+    "fps": 12
+  }
+}

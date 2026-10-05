@@ -1,0 +1,42 @@
+[
+  {
+    "d": "Left",
+    "g": "Walk",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent desktop dog sprite atlas.\nImage 1 is the EDIT TARGET, an existing 4-column by 2-row atlas containing exactly eight separate complete dog poses, in row-major order. Image 2 is the head identity and size reference for this same left-facing dog. Image 3 is the original dog's identity photo; never add its scenery.\nFix ONLY inconsistent head size and shape across image 1. Make every head match image 2 in fluffy round skull volume, hanging ears, muzzle proportions, eyes, pink tongue and red floral collar/gold bell. Its head must stay the same apparent physical size throughout all eight frames, without swelling, puffing up or shrinking. Keep the head crown, eye line and neck anchor in the same position as image 2 across all eight walk poses.\nCRITICAL invariants: retain each of image 1's eight DIFFERENT leg and paw poses pixel-faithfully; preserve body, tail, limb lengths, support feet, paw locations, foreground/background leg ownership, coat shading and per-cell figure placement. Do not copy one body stance to other cells, do not redraw gait, do not mirror, do not reorder frames, and do not scale whole dog or move its feet. Blend only the edited head into the existing short neck/collar. This is a LOCAL head correction, not a new animation design.\nOutput the same wide 2:1 canvas and exact 4x2 equal square cell layout. Each complete dog stays in its original cell, with generous transparent separation. Genuine RGBA transparent background, no shadows, no labels, no checkerboard, no outlines. Ignore invisible RGB noise outside the original alpha silhouette. Keep original realistic soft bichon appearance; no cartoon redesign and no extra fur or accessories.",
+    "paths": [
+      "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p22/Left-Walk-edit.png",
+      "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/WalkLeft/walk_left_000.png",
+      "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg"
+    ]
+  },
+  {
+    "d": "Left",
+    "g": "Joins",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent desktop dog sprite atlas.\nImage 1 is the EDIT TARGET, an existing 4-column by 2-row atlas containing exactly eight separate complete dog poses, in row-major order. Image 2 is the head identity and size reference for this same left-facing dog. Image 3 is the original dog's identity photo; never add its scenery.\nFix ONLY inconsistent head size and shape across image 1. Make every head match image 2 in fluffy round skull volume, hanging ears, muzzle proportions, eyes, pink tongue and red floral collar/gold bell. Its head must stay the same apparent physical size throughout all eight frames, without swelling, puffing up or shrinking. Enlarge the undersized heads to match image 2, keeping their natural neck attachment and each pose's existing slight vertical movement.\nCRITICAL invariants: retain each of image 1's eight DIFFERENT leg and paw poses pixel-faithfully; preserve body, tail, limb lengths, support feet, paw locations, foreground/background leg ownership, coat shading and per-cell figure placement. Do not copy one body stance to other cells, do not redraw gait, do not mirror, do not reorder frames, and do not scale whole dog or move its feet. Blend only the edited head into the existing short neck/collar. This is a LOCAL head correction, not a new animation design.\nOutput the same wide 2:1 canvas and exact 4x2 equal square cell layout. Each complete dog stays in its original cell, with generous transparent separation. Genuine RGBA transparent background, no shadows, no labels, no checkerboard, no outlines. Ignore invisible RGB noise outside the original alpha silhouette. Keep original realistic soft bichon appearance; no cartoon redesign and no extra fur or accessories.",
+    "paths": [
+      "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p22/Left-Joins-edit.png",
+      "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/WalkLeft/walk_left_000.png",
+      "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg"
+    ]
+  },
+  {
+    "d": "Right",
+    "g": "Walk",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent desktop dog sprite atlas.\nImage 1 is the EDIT TARGET, an existing 4-column by 2-row atlas containing exactly eight separate complete dog poses, in row-major order. Image 2 is the head identity and size reference for this same right-facing dog. Image 3 is the original dog's identity photo; never add its scenery.\nFix ONLY inconsistent head size and shape across image 1. Make every head match image 2 in fluffy round skull volume, hanging ears, muzzle proportions, eyes, pink tongue and red floral collar/gold bell. Its head must stay the same apparent physical size throughout all eight frames, without swelling, puffing up or shrinking. Keep the head crown, eye line and neck anchor in the same position as image 2 across all eight walk poses.\nCRITICAL invariants: retain each of image 1's eight DIFFERENT leg and paw poses pixel-faithfully; preserve body, tail, limb lengths, support feet, paw locations, foreground/background leg ownership, coat shading and per-cell figure placement. Do not copy one body stance to other cells, do not redraw gait, do not mirror, do not reorder frames, and do not scale whole dog or move its feet. Blend only the edited head into the existing short neck/collar. This is a LOCAL head correction, not a new animation design.\nOutput the same wide 2:1 canvas and exact 4x2 equal square cell layout. Each complete dog stays in its original cell, with generous transparent separation. Genuine RGBA transparent background, no shadows, no labels, no checkerboard, no outlines. Ignore invisible RGB noise outside the original alpha silhouette. Keep original realistic soft bichon appearance; no cartoon redesign and no extra fur or accessories.",
+    "paths": [
+      "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p22/Right-Walk-edit.png",
+      "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/WalkRight/walk_right_000.png",
+      "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg"
+    ]
+  },
+  {
+    "d": "Right",
+    "g": "Joins",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent desktop dog sprite atlas.\nImage 1 is the EDIT TARGET, an existing 4-column by 2-row atlas containing exactly eight separate complete dog poses, in row-major order. Image 2 is the head identity and size reference for this same right-facing dog. Image 3 is the original dog's identity photo; never add its scenery.\nFix ONLY inconsistent head size and shape across image 1. Make every head match image 2 in fluffy round skull volume, hanging ears, muzzle proportions, eyes, pink tongue and red floral collar/gold bell. Its head must stay the same apparent physical size throughout all eight frames, without swelling, puffing up or shrinking. Enlarge the undersized heads to match image 2, keeping their natural neck attachment and each pose's existing slight vertical movement.\nCRITICAL invariants: retain each of image 1's eight DIFFERENT leg and paw poses pixel-faithfully; preserve body, tail, limb lengths, support feet, paw locations, foreground/background leg ownership, coat shading and per-cell figure placement. Do not copy one body stance to other cells, do not redraw gait, do not mirror, do not reorder frames, and do not scale whole dog or move its feet. Blend only the edited head into the existing short neck/collar. This is a LOCAL head correction, not a new animation design.\nOutput the same wide 2:1 canvas and exact 4x2 equal square cell layout. Each complete dog stays in its original cell, with generous transparent separation. Genuine RGBA transparent background, no shadows, no labels, no checkerboard, no outlines. Ignore invisible RGB noise outside the original alpha silhouette. Keep original realistic soft bichon appearance; no cartoon redesign and no extra fur or accessories.",
+    "paths": [
+      "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p22/Right-Joins-edit.png",
+      "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/WalkRight/walk_right_000.png",
+      "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg"
+    ]
+  }
+]

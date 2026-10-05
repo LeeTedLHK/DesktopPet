@@ -24,6 +24,7 @@ public partial class App : Application
             _instanceMutex = new Mutex(true, @"Local\DesktopPet.SingleInstance", out _ownsMutex);
             if (!_ownsMutex)
             {
+                for (var attempt = 0; attempt < 20 && !InstanceSignal.Notify(); attempt++) Thread.Sleep(50);
                 Shutdown();
                 return;
             }

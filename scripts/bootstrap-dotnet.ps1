@@ -1,4 +1,4 @@
-# Optional SDK provisioning: downloads official Microsoft files into this workspace only.
+﻿# Optional SDK provisioning: downloads official Microsoft files into this workspace only.
 $ErrorActionPreference = 'Stop'
 $taskRoot = Split-Path -Parent $PSScriptRoot
 $toolsDirectory = Join-Path $taskRoot '.tools'

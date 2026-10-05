@@ -1,0 +1,272 @@
+{
+  "date": "2026-10-03",
+  "phase": "P6",
+  "generator": "built-in tools.image_gen__imagegen",
+  "transparent_background": true,
+  "references": [
+    "src/DesktopPet/Assets/Pet/pet.jpg",
+    "src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+  ],
+  "primary_identity": "actual pet.jpg; huge cloud head, long blended ears, shaggy curls, cream muzzle, red patterned collar and yellow bell",
+  "attempts": [
+    {
+      "action": "IdentityAnchor",
+      "version": 1,
+      "prompt": "Use case: photorealistic-natural\nAsset type: identity anchor for a desktop pet animation, one whole-body dog cutout.\nInput image 1 (pet.jpg) is the PRIMARY IDENTITY reference. Match this exact individual dog's face, haircut, coat and red collar with its yellow bell. Input image 2 (three-view reference) is ONLY secondary guidance for healthy four-legged anatomy; never replace the real dog's face or shaggy cloud haircut with the tidier generic dog in image 2.\nPrimary request: show the same real dog from image 1 standing naturally on all FOUR paws, body oriented mostly toward the LEFT in a three-quarter side view, head gently turned toward the camera so its recognizable face remains visible. One single dog only, complete tail, entire head and all paws visible.\nIdentity is the top priority: an exceptionally HUGE round cloud-like head with wide fluffy cheeks, long fluffy drooping ears that blend into the whole rounded head outline, irregular soft white shaggy curls rather than a sculpted short teddy trim. Small dark glossy eyes partly nestled within fur, a substantial shiny black nose, curled cream-tinted fluffy muzzle, open friendly mouth and visible relaxed pink tongue. Preserve the actual photo's muzzle, smile and face proportions. The head is visually large relative to the compact torso, approximately 45% of the total standing head-to-paw height, cheek width broader than the shoulder. Healthy compact bichon body, four sturdy curly fluffy legs, natural joints, fluffy tail curled upward over the rump. Red patterned collar visible below the chin, small yellow round bell centered at throat. No leash.\nStyle/medium: a convincing high-quality photographic raster cutout of the real animal with naturally textured shaggy curly white fur and soft fur-tip edges, soft neutral daylight, no cartoon, no plush toy or simplified mascot.\nComposition/framing: square canvas; fixed eye-level slightly elevated three-quarter side camera. Dog stands centered at a comfortable scale, nose points left, tail to the right; head is three-quarter toward the viewer. At least 10% EMPTY transparent padding on EVERY side. Entire silhouette and four paws fully contained, ground-contact paws share a natural baseline.\nScene/backdrop: GENUINE TRANSPARENT alpha background, only dog pixels. No backdrop or floor, no contact shadow, no cast shadow, no scenery, no checkerboard pattern, no other objects.\nConstraints: retain the giant cloud head and long blended ear fur of photo 1. Do not imitate the generic small round trimmed teddy/poodle face. No text, labels, borders, motion lines, grid, watermarks, extra or missing legs, disconnected fur patches, clipped fur or tail. True alpha=0 outside the animal with clean semi-transparent fine fur edges.",
+      "selected": true,
+      "status": "root-approved-identity",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-218717a8-f4a2-458c-be01-ea53ba887b30.png",
+      "persisted": "artifacts/imagegen/p6/IdentityAnchor-v1.png"
+    },
+    {
+      "action": "WalkLeft",
+      "version": 1,
+      "prompt": "Use case: photorealistic-natural\nAsset type: production desktop pet animation sprite atlas.\nInput image 1 is the real dog photo pet.jpg, PRIMARY individual identity. Input image 2 is the approved full-body IdentityAnchor-v1.png of that SAME dog; lock its huge head proportions, long blended ears, facial features, coat, collar and whole-animal photographic rendering. These are references, not a background to copy. No prior animation frames.\nIDENTITY LOCK: this exact individual is a bichon with an exceptionally HUGE round cloud head, wide fluffy cheeks, long drooping fluffy ears blending into the round outline, small dark glossy eyes nestled in white curls, substantial shiny black nose, cream-tinted curly muzzle and friendly open mouth with a visible small pink tongue. Red patterned collar and round yellow bell. Head silhouette diameter approximately 45% of standing head-to-paw height; head wider than shoulder. Compact healthy torso, fluffy curly white coat with natural irregular shaggy curls, furry legs and curled fluffy tail. Keep the reference’s fuller shaggy hair, never a generic clipped teddy-poodle or tiny head.\nOUTPUT: exactly ONE landscape RGBA PNG atlas, 2:1 aspect ratio, preferably 2048x1024 pixels. Four columns by two rows of EQUAL SQUARE cells, exactly eight complete dogs, one dog per cell. Invisible cells; no lines or separators. Temporal order: top row left to right frames 1..4, bottom row left to right frames 5..8.\nCAMERA: body oriented toward LEFT in a near-side three-quarter view, head angled 20 degrees toward viewer as in the approved anchor, so the recognizable face remains. Every frame faces LEFT. Locked orthographic slightly elevated side camera. Nose on LEFT, tail on RIGHT. The viewpoint and head angle are identical in ALL eight cells. Maintain the exact head size, torso volume, camera scale, lighting, fur, ears, collar and bell throughout; animate natural leg joints, ears/tail and body bob only. Four anatomically correct legs with appropriately occluded far limbs, no extra limbs.\nFRAMING: shared invisible ground baseline at local y=448 of every 512-square cell. In a normal contact pose, top of cloud head near y=65; nose/tail within x=45..467. The ENTIRE dog including airborne feet, tail, nose and all fur remains fully contained in EACH cell with generous clear margins. Never crop or cross any cell boundary. Same body horizontal center within all cells, no travel across cells. The head’s diameter in every cell approximately 190 pixels. Up to 85% of the cell width only, leave at least 6% transparent margin even in widest poses. Do not fit, zoom or shrink individual poses. Running leg extension may change silhouette width while head/body retain identical size.\nMEDIUM: convincing photographic cutouts with realistic fine shaggy curly white fur and soft edge alpha, neutral soft daylight with clear face detail. GENUINE TRANSPARENT background alpha0 outside dog. Only animal pixels, no floor, no ground, no contact or cast shadows, no backdrop, no scenery, no objects, no motion lines, no checkerboard texture, no text, numbers, labels, borders or watermark. No clipped heads/tails/feet, detached fur clumps or duplicate dogs.\nACTION: relaxed WALK IN PLACE, eight evenly spaced successive phases of ONE natural FOUR-BEAT quadruped walking cycle. At least three paws support the body during most phases; paw lifts are small. This is gentle short-step walking. Head/torso stay mostly steady with only 1-2% vertical bob, never leap. Clearly different leg placement in all eight frames; identical photo of dog standing repeated eight times is unacceptable.\nEXACT gait sequence, frame 1 through 8: 1 near hind paw reaches forward under hip and contacts, near fore paw planted just behind shoulder; 2 near fore paw lifts and swings toward the nose while the other three support; 3 near fore paw contacts forward, far hind begins unloading; 4 far hind paw lifts/passes forward under hip, three supporting paws visible; 5 far hind contacts forward, far fore begins unloading; 6 far fore lifts and swings forward while near fore moves backward on ground; 7 far fore contacts forward, near hind begins unloading behind hip; 8 near hind lifts/passes forward ready to join frame 1, near fore grounded rearward. Keep stance paws at shared baseline and paws under their joints; short natural stride, modest bent limb joints, far paws distinct behind near paws. Soft tiny ear/tail sway, not body morphing. Smooth cyclic continuity from frame 8 back to frame 1.",
+      "selected": false,
+      "status": "rejected",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-dacbf226-97bd-4200-aa68-9eed679684e4.png",
+      "persisted": "artifacts/imagegen/p6/WalkLeft-v1.png",
+      "rejected_reason": "Dog occupies >95% cell width; opaque pixels reach boundaries in several bottom cells; only four dominant repeated paw patterns."
+    },
+    {
+      "action": "WalkRight",
+      "version": 1,
+      "prompt": "Create a TRANSPARENT PNG eight-frame RIGHT walking bichon sprite atlas. Four columns, two rows, landscape2:1 image, eight equal SQUARE cells. Exactly eight SMALL separated full-body dogs, one centered in each cell. Most of the image should be empty transparent space. Each dog is only60% of its cell width and60% of its cell height. At least20% of each cell must be empty transparent padding on BOTH left and right sides. Keep a very wide transparent gap between neighboring dogs. Tail/nose/feet/fur NEVER overlap neighboring cells. Same scale and framing in every cell. A fixed invisible contact baseline y82% of the local cell height. TOP OF HEAD y22%. This SMALL spacious layout is critical.\nExact real dog identity from photo1 and approved anchor2: huge fluffy round CLOUD head, broad cheeks, long blended drooping ears, small dark eyes, large black nose, cream shaggy muzzle and happy mouth/tongue; red patterned collar and yellow bell. Full irregular curly white coat and curled tail. Same large head proportion and photographic texture as anchor, never clipped teddy/poodle trim. Four furry anatomical legs. All8 dogs body faces RIGHT with head angled20degrees toward camera, recognizable three-quarter face.\nONE smooth short-step WALK IN PLACE, eight chronological DIFFERENT poses. Near FRONT paw path across frames1..8: forward contact→mid-forward weight→under shoulder→planted rearward→rear toe-off→lift/passing under chest→forward swing→ready for forward contact. Far front paw offset half cycle, rear legs staggered quarter cycle. Moderate paw lifts, no flight or running. Near forepaw must steadily travel forward-to-back then recover, not oscillate front/tucked every frame. Tiny body bob only. Keep head/body size and camera identical, no morphing. Frame8 loops to1.\nOnly dog pixels on TRUE TRANSPARENT RGBA alpha0 background. No shadows, floor, checkerboard, scenery, objects, lines, text, numbers, labels, borders, watermark or clipped silhouette. Soft realistic fur-tip alpha.",
+      "selected": true,
+      "status": "root-approved-staged-validated",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-44acc889-5915-44c0-a2fb-43d223a7d984.png",
+      "persisted": "artifacts/imagegen/p6/WalkRight-v1.png",
+      "selected_atlas": "artifacts/imagegen/p6/WalkRight.png"
+    },
+    {
+      "action": "RunLeft",
+      "version": 1,
+      "prompt": "Create a TRANSPARENT PNG eight-frame LEFT RUNNING bichon sprite atlas. Four columns, two rows, landscape2:1 image, eight equal SQUARE cells. Exactly eight SMALL well-separated full-body dogs, one centered in each cell. Most image empty transparent space. Compact standing silhouette uses only60% cell width/height; extended running silhouette at most75% width. At least12% clear alpha0 padding on both sides including farthest extended paw, nose and tail. NEVER overlap neighboring cells. SAME head/body size, camera scale/framing in ALL8. Ground-contact baseline at local y82% of cell height; airborne feet CLEARLY ABOVE it, at y72% or higher. Normal head top y22%, flight head top y15-18%. Every full silhouette stays inside its own cell.\nIdentity from actual photo1 and approved anchor2: exact SAME bichon, huge round CLOUD head/cheeks, long drooping fluffy ears blending into head, small dark eyes, large black nose, cream shaggy curly muzzle with friendly mouth/pink tongue, irregular fluffy white curls, red patterned collar/yellow bell, furry legs and curled tail. Photographic fine fur texture, no cartoon or generic trimmed teddy/poodle. All bodies face LEFT, head angled20degrees toward viewer keeping anchor face. Lock facial/head/torso volume, no per-pose size change. Four anatomically correct legs with far limbs visible.\nACTION: a genuine EXCITED RUN/BOUND IN PLACE, eight DIFFERENT CHRONOLOGICAL evenly spaced phases of one looping gallop. Full joint articulation and TWO unmistakable airborne flight phases, NOT fast walking. Read frame1-4 top row then5-8 bottom row:\n1 rear paw contact/gather: hind legs tucked beneath hips on ground, front legs bent off ground, body slightly lowered.\n2 rear PUSH-OFF: hind legs extend backward against ground, chest rising, front legs extending toward nose.\n3 EXTENDED FLIGHT: ALL FOUR paws off ground by at least8% cell height, front legs reach toward nose, hind legs extend backward toward tail, chest/head raised.\n4 front LANDING: front paws reach down toward nose to ground-contact baseline, hind legs bend to come forward.\n5 compressed front support: front paws under chest on ground, chest/head lower, hind legs gathered forward beneath belly.\n6 front push-off/recovery: front legs push then fold backward beneath chest, hind legs sweeping forward, body rising.\n7 GATHERED FLIGHT: ALL FOUR paws off ground by at least8% cell height, front legs folded back and hind legs folded forward beneath belly, body/head raised. Compact tucked gallop suspension distinct from frame3 extended flight.\n8 hind landing: hind paws reaching down under hips to shared ground baseline, front legs recovering forward off ground, closes smoothly into frame1.\nEars follow momentum with visible soft bounce, fluffy tail and bell respond naturally. Preserve genuine vertical rise/fall and airborne clearance, do not pin feet to ground. Moderate bounded stride, no gigantic stretching or body morphing.\nOnly complete isolated dogs and true RGBA alpha0 transparency. No floor, shadow, scenery, motion lines, checkerboard, objects, text, numbers, labels, gridlines, border, watermark or clipping. Soft clean realistic fur-tip alpha.",
+      "selected": false,
+      "status": "rejected",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-d87e2b5d-0fbf-4305-a45f-3769623460bb.png",
+      "persisted": "artifacts/imagegen/p6/RunLeft-v1.png",
+      "rejected_reason": "Extended-flight rear paw crosses equal-cell boundary and contaminates following cell, despite genuine flight/landing phases."
+    },
+    {
+      "action": "RunRight",
+      "version": 1,
+      "prompt": "Create NEW photographic RIGHT running directional artwork of the exact real bichon. Input1 real pet.jpg PRIMARY identity, input2 approved anchor face/coat/proportions, input3 accepted LEFT run atlas ONLY a guide to matching spacious layout and eight chronological gallop poses. Generate the dog facing RIGHT in EVERY cell, nose right/tail left, head slightly20degrees toward camera keeping its real face. Preserve HUGE cloud head/full fluffy cheeks/long blended drooping ears, small dark eyes/large black nose/cream shaggy muzzle/friendly mouth and pink tongue, irregular white curly coat, red patterned collar/yellow bell and curled tail. No generic clipped teddy-poodle.\nExactly4 columns/2rows, eight equal SQUARE cells, landscape2:1 RGBA atlas, exactly1 complete SMALL dog per cell. Most canvas empty true alpha0. Match spacious layout of input3: full extended silhouette at most75% cell width, at least12% transparent side gaps, no tail/nose/paw/fur crossing boundaries. Head size and camera scale EXACTLY same in all8, matched to input3, no per-pose fitting. The entire animal remains inside each cell including longest stretched limbs. Same invisible ground-contact baseline y84%cellheight for contacts only; flights clearly above baseline. Preserve real body rise/fall.\nCreate8 DIFFERENT successive run poses, order top-left to bottom-right. Same genuine gallop phases as input3: 1 gathered HIND ground contact/front legs folded off ground; 2 HIND push-off backward/front legs reach forward; 3 EXTENDED AIRBORNE suspension, front legs extend RIGHT and hind legs extend LEFT, ALL FOUR paws clearly off ground by at least8%cellheight; 4 FRONT landing forward/right, hind legs folding inward; 5 FRONT support compression/chest low/hind gathered forward; 6 FRONT push-off then folded back/hind swing forward; 7 GATHERED AIRBORNE, all4 legs visibly tucked beneath belly with ALL FOUR paws clearly off ground by at least8%cellheight; 8 HIND landing under hip/front recovering, smooth join back to1. True RUN not fast walk. Healthy four-leg anatomy, visible appropriate far limbs, natural ears/tail/bell inertia. Keep face, fluffy head/torso volume and camera constant. Do not duplicate poses or flatten airtime.\nOnly dog pixels and original TRUE transparent alpha. No shadows, floor, scenery, motion lines, checkerboard, objects, grids, text, numbers, labels, borders, watermark, clipping or detached specks. Fine soft fur edges.",
+      "selected": false,
+      "status": "rejected",
+      "referenced_images": [
+        "src/DesktopPet/Assets/Pet/pet.jpg",
+        "artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "artifacts/imagegen/p6/RunLeft.png"
+      ],
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-d51f3f2a-82e3-43f2-8890-0dec495450b7.png",
+      "persisted": "artifacts/imagegen/p6/RunRight-v1.png",
+      "rejected_reason": "Extended airborne paw/nose crosses top-row third cell boundary; chronological gait and likeness otherwise suitable."
+    },
+    {
+      "action": "WalkLeft",
+      "version": 2,
+      "prompt": "Use case: photorealistic-natural. Make a production WALK LEFT sprite atlas of the exact real bichon from reference photo 1 and approved anchor 2. Photographic raster fur, not cartoon. Identity: HUGE round cloud head and cheeks, long fluffy drooping ears blended into head, small dark eyes, substantial black nose, cream curly muzzle, happy mouth/small tongue, irregular shaggy white curls, red patterned collar/yellow round bell. Healthy compact body and furry four legs, curled tail. Match anchor face/haircut and proportions exactly.\nFORMAT: ONE genuine TRANSPARENT RGBA PNG, aspect ratio2:1, four columns by two rows, exactly8 equal SQUARE cells, exactly1 complete dog per cell. Read frames1-4 top row then5-8 bottom row. No drawn grid, text or numbers.\nCRITICAL PADDING: each dog is SMALLER than the previous sheet. Each entire silhouette uses only70-75% of its own square cell’s width and height. Keep at least12% clear alpha0 padding on left/right/top and10% below feet in EVERY cell. Nose, tail and fur NEVER touch any cell border. One fixed camera scale for all8, no zooming. Feet contact baseline at local y88% of cell height. Top of head near local y15%. Same torso horizontal center. This spacious atlas framing is essential.\nVIEW: EVERY dog’s body faces LEFT (nose left, tail right), near-side three-quarter view; head angled slightly20degrees toward camera retaining reference face. Exact same head diameter, fur volume, eye/nose features, body, lighting/camera throughout. Head/torso stay steady with tiny walking bob.\nACTION: eight DIFFERENT successive poses of one smooth gentle four-legged WALK IN PLACE, no leap or run. The near FRONT paw completes one full forward/backward cycle across all8 frames: (1) forward ground contact toward LEFT; (2) planted slightly forward below chest; (3) planted under shoulder; (4) planted BACK toward RIGHT behind shoulder; (5) push-off and lifted behind shoulder; (6) bent and passing beneath chest; (7) swinging forward toward LEFT; (8) extended toward LEFT just before contact. Far front paw has opposite phase; hind paws move in staggered walking phases, near hind approaches forward when near front planted behind, then moves behind as front swings forward. Natural small paw lifts, bent joints and short steps, three paws support most poses. Far legs must remain visibly distinguishable, four correct paws, no duplicate pose. Frame8 smoothly joins1. Tiny ear/tail sway only. The same face stays visible and large as approved anchor.\nONLY isolated complete dogs and original alpha transparency. No background, checkerboard, floor, shadows, objects, motion lines, labels, text, borders, detached fur or clipping. Clean semi-transparent fur tips.",
+      "selected": false,
+      "status": "rejected",
+      "persisted": "artifacts/imagegen/p6/WalkLeft-v2.png",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-ef73c86b-054c-4dd5-a653-0a0f15bf0019.png",
+      "rejected_reason": "Expanded silhouettes occupy >90% width and cross equal-cell boundaries despite spacious layout request; continuous near-forepaw direction still inconsistent."
+    },
+    {
+      "action": "WalkLeft",
+      "version": 3,
+      "prompt": "Create a TRANSPARENT PNG eight-frame LEFT walking bichon sprite atlas. Four columns, two rows, landscape2:1 image, eight equal SQUARE cells. Exactly eight SMALL separated full-body dogs, one centered in each cell. Most of the image should be empty transparent space. Each dog is only60% of its cell width and60% of its cell height. At least20% of each cell must be empty transparent padding on BOTH left and right sides. Keep a very wide transparent gap between neighboring dogs. Tail/nose/feet/fur NEVER overlap neighboring cells. Same scale and framing in every cell. A fixed invisible contact baseline y82% of the local cell height. TOP OF HEAD y22%. This SMALL spacious layout is critical.\nExact real dog identity from photo1 and approved anchor2: huge fluffy round CLOUD head, broad cheeks, long blended drooping ears, small dark eyes, large black nose, cream shaggy muzzle and happy mouth/tongue; red patterned collar and yellow bell. Full irregular curly white coat and curled tail. Same large head proportion and photographic texture as anchor, never clipped teddy/poodle trim. Four furry anatomical legs. All8 dogs body faces LEFT with head angled20degrees toward camera, recognizable three-quarter face.\nONE smooth short-step WALK IN PLACE, eight chronological DIFFERENT poses. Near FRONT paw path across frames1..8: forward contact→mid-forward weight→under shoulder→planted rearward→rear toe-off→lift/passing under chest→forward swing→ready for forward contact. Far front paw offset half cycle, rear legs staggered quarter cycle. Moderate paw lifts, no flight or running. Near forepaw must steadily travel forward-to-back then recover, not oscillate front/tucked every frame. Tiny body bob only. Keep head/body size and camera identical, no morphing. Frame8 loops to1.\nOnly dog pixels on TRUE TRANSPARENT RGBA alpha0 background. No shadows, floor, checkerboard, scenery, objects, lines, text, numbers, labels, borders, watermark or clipped silhouette. Soft realistic fur-tip alpha.",
+      "selected": true,
+      "status": "root-approved-staged-validated",
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-c16734a3-d6b2-4506-a4ff-c09c1c5ea93d.png",
+      "persisted": "artifacts/imagegen/p6/WalkLeft-v3.png",
+      "selected_atlas": "artifacts/imagegen/p6/WalkLeft.png"
+    },
+    {
+      "action": "RunLeft",
+      "version": 2,
+      "prompt": "Create a true TRANSPARENT PNG sprite atlas: eight SMALL separated photographic bichon dogs, four columns/two rows, 2:1 landscape, equal SQUARE cells, one dog per cell. Temporal order top row then bottom row. No grid/text.\nCRITICAL SMALL SCALE: Most canvas EMPTY transparent. Each compact dog ONLY42% of its cell width and50% height; widest stretched run ONLY60% cell width. DOG HEAD ONLY28% of cell width. Center dog horizontally. At least20% transparent empty space to LEFT and RIGHT in every cell, even extended paws. Full silhouette NEVER crosses cell boundary. Fixed head/body size in all8. Shared ground-contact baseline y80% cell height; normal top of head y30%; airborne top y24%, airborne feet y70% or ABOVE. Preserve vertical rise/fall.\nThis exact real bichon from photo1 and approved anchor2: HUGE round cloud head relative to torso, full fluffy cheeks/long blended drooping ears, small dark eyes, large black nose, cream curly muzzle, friendly mouth/pink tongue, shaggy irregular white curls, red patterned collar/yellow bell. Photoreal fine fur texture and anatomical furry four legs/curled tail, not cartoon or clipped teddy. Body faces LEFT, head20degrees toward viewer, same face/coat/camera all8.\nGENUINE RUN, a full looping GALLOP, not walk. Eight DIFFERENT consecutive phases:\n1 gathered hind paw ground contact, forelegs folded off ground; 2 hind PUSH-OFF backward, forelegs reach forward; 3 EXTENDED AIRBORNE with ALL FOUR paws at least10% cell height above ground, forelegs reach toward nose, hindlegs stretch backward; 4 forepaw landing forward, hind legs fold inward; 5 compressed foreleg support, head/chest low and hind legs gathering forward; 6 foreleg push-off/fold backward, hind legs swing forward; 7 GATHERED AIRBORNE, ALL FOUR paws at least10% cell height above ground, all legs visibly tucked under body, head/chest high; 8 hind paw landing beneath hip/front paws recovering, joins1. Clear leg articulation and flight, ears/tail/bell bouncing naturally. No body/head scaling, no random pose order.\nOnly complete isolated dogs and TRUE alpha0 background. No shadows, ground/floor, scenery, checkerboard, motion lines, objects, numbers, text, labels, borders or clipping. Clean soft fur-tip alpha.",
+      "status": "rejected",
+      "selected": false,
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-e3c75023-534d-40c8-ad03-ddd1facf4b7c.png",
+      "persisted": "artifacts/imagegen/p6/RunLeft-v2.png",
+      "rejected_reason": "Genuine sequential run but extended flight rear paw still crosses own cell; layout-only imagegen edit required."
+    },
+    {
+      "action": "RunLeft",
+      "version": 3,
+      "prompt": "Use case: precise-object-edit. Input1 is the edit TARGET: eight-photo LEFT running dog atlas. Input2 real pet.jpg is primary identity, input3 approved dog anchor confirms face. CHANGE ONLY THE ATLAS LAYOUT: make each of the eight ENTIRE dogs uniformly 25% SMALLER than in input1, about three-quarters of its present size, and center it comfortably inside its own equal square cell. Keep the same eight chronological running poses, leg configurations, cloud-like huge head/body proportions, photoreal coat, real-dog face, red patterned collar/yellow bell, direction, lighting and framing camera. Do not replace poses or add dogs. The dogs currently almost touch across cells: the corrected atlas must have BROAD EMPTY TRANSPARENT GAPS separating all8, at least12% of each cell width clear on each side even beside the longest extended paws. Most background empty alpha0. Entire nose/tail/paws/fur must fit inside their own cells with no neighbor overlap.\nExactly4 columns/2rows, equal SQUARE cells, landscape2:1 true RGBA transparency, one dog per cell, order top row then bottom row. Preserve extended airborne frame3, front landing frame4, compressed frame5, gathered airborne frame7 and hind landing frame8. Keep same chronological gallop: hind gather→hind push→extended flight→fore landing→fore compression→fore push→gathered flight→hind landing. Do NOT ground every frame: shared ground baseline at local y82%cellheight for landing/contact only, flight feet remain above y73%. Maintain natural vertical rise/fall. Every dog still body LEFT/head20degrees toward viewer. Same head/body size across ALL cells. Restore any extremity that touched a cell boundary while preserving anatomical four paws and whole poses.\nNo shadows, floor, backgrounds, grid, checkerboard, motion lines, labels, text, numbers or borders. Preserve original true transparent alpha and realistic semi-transparent fur tips. No isolated flecks, no body-part deformation, only smaller entire-dog framing.",
+      "referenced_images": [
+        "artifacts/imagegen/p6/RunLeft-v2.png",
+        "src/DesktopPet/Assets/Pet/pet.jpg",
+        "artifacts/imagegen/p6/IdentityAnchor-v1.png"
+      ],
+      "status": "root-approved-staged-validated",
+      "selected": true,
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-596774f4-07a1-47ce-a09e-886b27752a22.png",
+      "persisted": "artifacts/imagegen/p6/RunLeft-v3.png",
+      "selected_atlas": "artifacts/imagegen/p6/RunLeft.png"
+    },
+    {
+      "action": "RunRight",
+      "version": 2,
+      "prompt": "Edit ONLY layout of input1 RIGHT run atlas, retaining all8 chronological poses and direction/photographic dog exactly. Shrink EVERY whole dog uniformly by another20% relative to input1, center each ENTIRE full silhouette in its own square cell, and leave broad empty alpha0 gaps. Especially extended airborne dog in top row third cell must stay completely inside that cell; tail/paw/nose/fur cannot enter neighboring cells. Keep at least12% of each cell width transparent at left/right even in widest pose. No per-pose head/body scaling: all dogs same physical head/torso size. Input2 real dog photo PRIMARY identity, input3 approved cloud-headed full-body anchor. Preserve big cloud head and cheeks/long blended ears, black eyes/large black nose/cream curly muzzle/pink tongue, shaggy white coat, red patterned collar/yellow bell. Same camera/lighting/angle, body faces RIGHT, head slightlytowardviewer. This is ONLY a smaller complete-dog layout correction.\nExactly4 columns2rows equal SQUARE cells, eight dogs total, landscape2:1 TRUE TRANSPARENT RGBA. Preserve same8 gait poses and order: hind gathered contact→hind push-off→EXTENDED airborne→front landing→front compressed support→front push/recover→GATHERED airborne→hind landing. Preserve actual flight: every paw off ground in frames3/7, torso higher; feet contact the shared localy82%cellheight baseline only in contacts/landings, flights have bottom around72% or higher. Match same camera scale all8; preserve natural vertical rise/fall. No new poses, missing/extra legs, clipped extremities or deformation.\nOnly complete isolated dogs and original clean transparent alpha, no shadows/floor/scenery/checkerboard/motionlines/grid/text/labels/objects. Clean fur tips and ample transparent margins.",
+      "referenced_images": [
+        "artifacts/imagegen/p6/RunRight-v1.png",
+        "src/DesktopPet/Assets/Pet/pet.jpg",
+        "artifacts/imagegen/p6/IdentityAnchor-v1.png"
+      ],
+      "status": "root-approved-staged-validated",
+      "selected": true,
+      "source": "C:/Users/BOSSlee/.codex/generated_images/01a1023d-f872-7d63-9ba7-41cb53485021/exec-5bdf6bca-4092-4bd4-a31e-bd5f3e7029bb.png",
+      "persisted": "artifacts/imagegen/p6/RunRight-v2.png",
+      "selected_atlas": "artifacts/imagegen/p6/RunRight.png"
+    }
+  ],
+  "packaging": {
+    "script": "scripts/prepare-p6-assets.py",
+    "staged_directory": "artifacts/imagegen/p6/packaged",
+    "frames_per_action": 8,
+    "frame_size": [
+      256,
+      256
+    ],
+    "format": "RGBA",
+    "fps": {
+      "WalkLeft": 10,
+      "WalkRight": 10,
+      "RunLeft": 12,
+      "RunRight": 12
+    },
+    "method": "4x2 equal whole-cell crop; one fixed whole-cell LANCZOS downsample per action; full-frame integer x/y registration; no alpha masks, software pose synthesis, body-part deformation, mirroring or interpolation",
+    "fixed_framing": {
+      "WalkLeft": {
+        "whole_cell_size": 240,
+        "x_offset": 8
+      },
+      "WalkRight": {
+        "whole_cell_size": 245,
+        "x_offset": 5
+      },
+      "RunLeft": {
+        "whole_cell_size": 256,
+        "x_offset": -12
+      },
+      "RunRight": {
+        "whole_cell_size": 280,
+        "x_offset": -12
+      }
+    },
+    "source_cell_order_zero_based": {
+      "WalkLeft": [
+        0,
+        7,
+        3,
+        4,
+        2,
+        1,
+        5,
+        6
+      ],
+      "WalkRight": [
+        7,
+        0,
+        1,
+        3,
+        2,
+        4,
+        5,
+        6
+      ],
+      "RunLeft": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "RunRight": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "order_reason": "whole-cell walk reorder places forward contact/weight, under-shoulder, rearward/toe-off, passing and swing phases in a clearer chronological loop; generated running sequence remains in source order",
+    "contact_baseline": 228,
+    "running_registration": "Source phases0,1,3,4,7 register contact foot to228. Source phases2,5,6 translate relative to highest contact foot baseline in their source row; running airborne foot clearance is preserved, not registered to ground.",
+    "runtime_installation": "root agent after final visual acceptance; packaging script writes staged assets only"
+  },
+  "review": {
+    "identity": "Root reviewed and approved IdentityAnchor-v1.png before cycle generation; actual pet.jpg remains primary identity.",
+    "final": "Root reviewed all-actions-contact-160.png, packaging script and validation.json and accepted all four cycles.",
+    "scale": "Fixed action-wide scaling gives reasonably consistent cloud-head sizes at160px (rough visual estimates54–61px); generated camera/fur/face variation remains and no per-frame resize normalization was applied.",
+    "gait": "Walk phase order selected by whole-cell reorder. Runs retain hind gather/push, extended flight, fore landing/compression/push, gathered flight and hind landing; generated quadruped poses are not a hand-rigged exact biomechanical simulation.",
+    "alpha": "Original imagegen RGBA alpha retained through whole-cell resizing; no masking or background removal. Raw alpha0 RGB flecks were assessed on neutral dark composites. Final visible bbox is fully contained; edge alpha maximum0..1.",
+    "quantitative": "artifacts/imagegen/p6/validation.json",
+    "quantitative_summary": {
+      "WalkLeft": {
+        "width_range": [
+          186,
+          190
+        ],
+        "contact_baseline": 228,
+        "edge_alpha_max": 0
+      },
+      "WalkRight": {
+        "width_range": [
+          169,
+          184
+        ],
+        "contact_baseline": 228,
+        "edge_alpha_max": 1
+      },
+      "RunLeft": {
+        "width_range": [
+          174,
+          223
+        ],
+        "extended_flight_clearance": 22,
+        "gathered_flight_clearance": 16,
+        "edge_alpha_max": 1
+      },
+      "RunRight": {
+        "width_range": [
+          181,
+          234
+        ],
+        "extended_flight_clearance": 26,
+        "gathered_flight_clearance": 18,
+        "edge_alpha_max": 1
+      }
+    },
+    "previews": [
+      "artifacts/imagegen/p6/all-actions-contact-160.png",
+      "artifacts/imagegen/p6/WalkLeft-contact.png",
+      "artifacts/imagegen/p6/WalkLeft-contact-160.png",
+      "artifacts/imagegen/p6/WalkLeft-loop.gif",
+      "artifacts/imagegen/p6/WalkLeft-loop-160.gif",
+      "artifacts/imagegen/p6/WalkRight-contact.png",
+      "artifacts/imagegen/p6/WalkRight-contact-160.png",
+      "artifacts/imagegen/p6/WalkRight-loop.gif",
+      "artifacts/imagegen/p6/WalkRight-loop-160.gif",
+      "artifacts/imagegen/p6/RunLeft-contact.png",
+      "artifacts/imagegen/p6/RunLeft-contact-160.png",
+      "artifacts/imagegen/p6/RunLeft-loop.gif",
+      "artifacts/imagegen/p6/RunLeft-loop-160.gif",
+      "artifacts/imagegen/p6/RunRight-contact.png",
+      "artifacts/imagegen/p6/RunRight-contact-160.png",
+      "artifacts/imagegen/p6/RunRight-loop.gif",
+      "artifacts/imagegen/p6/RunRight-loop-160.gif"
+    ],
+    "quota": "No quota failure and no card redemption."
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "version": "P7",
+  "scope": "base",
+  "tool": "builtin image_gen.imagegen",
+  "transparent_background": true,
+  "identity": "approved P6 huge round white bichon head, short snout, tiny dark eyes, compact body, red patterned collar, gold bell",
+  "reference_images": [
+    "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+    "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+    "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+  ],
+  "packing_policy": "Whole equal cell cut, fixed per-action uniform whole-cell resize and whole-frame translation only; never modify generated alpha or distort body parts.",
+  "actions": {
+    "Idle": {
+      "grid": [
+        4,
+        2
+      ],
+      "requested_frame_count": 8,
+      "selected_source_cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 4 columns x 2 rows, eight equal SQUARE cells, atlas aspect ratio 2:1, reading left to right across the top then bottom.\nAction: eight consecutive subtle IDLE loop poses, front-three-quarter view facing slightly screen-left, dog standing calmly. Frame1 relaxed, frame2 chest inhale, frame3 eyelids softening, frame4 almost closed blink, frame5 blink closed, frame6 eyes reopen, frame7 exhale, frame8 returns gently to frame1. Feet stay grounded and planted; only natural breathing, tiny ear movement and blink, no walking or large head swing. Consistent head width and body scale across all eight cells.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029d-c809-7ca0-8a0c-5b775efecdbd\\exec-16523114-30e0-4d56-ab7d-430fee87b601.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/Idle-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/Idle.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/Idle",
+      "status": "recovered and visually identified",
+      "selection_reason": "All requested chronological frames.",
+      "packing": {
+        "cell_size": 180,
+        "x_offset": 38,
+        "fps": 5
+      }
+    },
+    "Happy": {
+      "grid": [
+        4,
+        2
+      ],
+      "requested_frame_count": 8,
+      "selected_source_cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 4 columns x 2 rows, eight equal SQUARE cells, atlas aspect ratio 2:1, reading left to right across top then bottom.\nAction: eight consecutive HAPPY celebration loop poses, front-three-quarter view facing slightly screen-left. Compact sitting dog with front paws on ground, mouth naturally opens into a friendly pant and a tiny pink tongue shows; tail gently wags, head rises and tilts a little, shoulders subtly wiggle. Sequence calm smile, brighter smile, head slightly left, joyful open smile, head upright, slight right tilt, relax, calm smile. Keep the enormous spherical head and little eyes exactly from image1; no human grin, no eyebrows, no hopping, no big body deformation. Bell red collar unchanged.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029d-c809-7ca0-8a0c-5b775efecdbd\\exec-78888bca-959b-4e1e-afcb-6fe148efc832.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/Happy-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/Happy.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/Happy",
+      "status": "recovered and visually identified",
+      "selection_reason": "All requested chronological frames.",
+      "packing": {
+        "cell_size": 164,
+        "x_offset": 46,
+        "fps": 9
+      }
+    },
+    "Sleep": {
+      "grid": [
+        4,
+        2
+      ],
+      "requested_frame_count": 8,
+      "selected_source_cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 4 columns x 2 rows, eight equal SQUARE cells, atlas aspect ratio 2:1, reading left to right across top then bottom.\nAction: eight consecutive SLEEP breathing loop poses. The same exact dog curled loosely lying on its side at the same model scale as standing, facing screen-left with its enormous round head resting on front paws and closed tiny eyes. Body compact curl, puff tail near hind legs, red collar and gold bell partly visible. Very subtle inhale and exhale only. The curled silhouette should occupy less vertical space than standing naturally; NEVER enlarge or stretch sleeping pose to fill cell height. Each frame same head size and floor line, no sleep symbols or floating letters.\nAdditional atlas safety: place each entire dog noticeably smaller within its square cell, use 12% transparent padding around every silhouette, no fur touches the outer atlas or cell boundaries. Preserve fixed head diameter and do not fill each cell.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029d-c809-7ca0-8a0c-5b775efecdbd\\exec-608fbc7a-be94-43b6-b608-bd76426dd3b7.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/Sleep-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/Sleep.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/Sleep",
+      "status": "recovered and visually identified",
+      "selection_reason": "All requested chronological frames.",
+      "packing": {
+        "cell_size": 204,
+        "x_offset": 26,
+        "fps": 4
+      }
+    },
+    "Petting": {
+      "grid": [
+        4,
+        2
+      ],
+      "requested_frame_count": 6,
+      "selected_source_cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 4 columns x 2 rows, eight equal SQUARE cells, atlas aspect ratio 2:1. Reading left to right top then bottom. First SIX cells are the six consecutive action frames; last two repeat resting poses.\nAction: handless PETTING response of same seated dog, front-three-quarter facing slightly screen-left. Six frames: calm eyes, eyes gently close, head tips gently left enjoying affection, head tips upright with relaxed soft mouth, slight contented right tilt, relaxed eyes open. Front paws remain grounded. No hand, person or touch object. Convey relaxed bliss by natural eyelids/head motion; no extra smile shapes or cartoon expression.\nAdditional atlas safety: place each entire dog noticeably smaller within its square cell, use 12% transparent padding around every silhouette, no fur touches the outer atlas or cell boundaries. Preserve fixed head diameter and do not fill each cell.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029d-c809-7ca0-8a0c-5b775efecdbd\\exec-c641e035-01df-4ab2-ae23-58163670b39d.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/Petting-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/Petting.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/Petting",
+      "status": "recovered and visually identified",
+      "selection_reason": "First six chronological action cells; last two are resting duplicates generated as padding.",
+      "packing": {
+        "cell_size": 180,
+        "x_offset": 38,
+        "fps": 4
+      }
+    },
+    "Feeding": {
+      "grid": [
+        4,
+        2
+      ],
+      "requested_frame_count": 6,
+      "selected_source_cells": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 4 columns x 2 rows, eight equal SQUARE cells, atlas aspect ratio 2:1. Reading left to right top then bottom. First SIX cells are six consecutive action frames; last two repeat resting poses.\nAction: FEEDING/chewing response, same dog standing front-three-quarter facing screen-left, feet planted. Six frames: attentive with nose slightly lowered, head dips to sniff ground, muzzle approaches ground, head rises with lips closed chewing a tiny unseen treat, small natural lick of nose, attentive head returns. DOG ONLY, no visible bowl, food, hands or props; readable eating action through clear lowered head and mouth chewing/lick. Preserve gigantic spherical head diameter, short snout, small eyes and compact body through head dip.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029d-c809-7ca0-8a0c-5b775efecdbd\\exec-74300e9a-eb20-4232-a5e4-a22a9ab2e564.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/Feeding-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/Feeding.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/Feeding",
+      "status": "recovered and visually identified",
+      "selection_reason": "First six chronological action cells; last two are resting duplicates generated as padding.",
+      "packing": {
+        "cell_size": 180,
+        "x_offset": 38,
+        "fps": 4
+      }
+    },
+    "Stretching": {
+      "grid": [
+        4,
+        2
+      ],
+      "requested_frame_count": 6,
+      "selected_source_cells": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 4 columns x 2 rows, eight equal SQUARE cells, atlas aspect ratio 2:1. Reading left to right top then bottom. First SIX cells are six consecutive action frames; last two repeat relaxed poses.\nAction: STRETCHING full-body play-bow stretch facing screen-left, the same enormous round head and small white body. Six frames: standing relaxed, front forelegs reach forward, elbows/chest descend toward ground while rump stays up, deepest gentle stretch with head low and tail up, shoulders rise slowly, return standing. Paws remain at ground, anatomically correct four legs, no extra feet. Same unchanging fur identity and proportions; stretching changes pose not head scale. No props.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029d-c809-7ca0-8a0c-5b775efecdbd\\exec-af844b24-ed2d-44da-87a6-8b0a48f5254a.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/Stretching-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/Stretching.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/Stretching",
+      "status": "recovered and visually identified",
+      "selection_reason": "First six chronological action cells; last two are resting duplicates generated as padding.",
+      "packing": {
+        "cell_size": 180,
+        "x_offset": 38,
+        "fps": 4
+      }
+    },
+    "Yawning": {
+      "grid": [
+        4,
+        2
+      ],
+      "requested_frame_count": 6,
+      "selected_source_cells": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 4 columns x 2 rows, eight equal SQUARE cells, atlas aspect ratio 2:1. Reading left to right top then bottom. First SIX cells are six consecutive action frames; last two repeat relaxed poses.\nAction: YAWNING sequence of same compact seated dog, front-three-quarter facing slightly screen-left. Six frames: drowsy half eyes, mouth begins open, natural moderate yawn, full natural canine yawn head slightly lifted with tongue curled subtly and eyes closed, mouth gradually closes, head relaxes eyes reopen. Keep same short snout and spherical huge furry head; do not make a long muzzle or frightening sharp teeth. Grounded front paws, no sleep symbols or props.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a0fd4c-4806-7140-89eb-bd92bb541d44\\exec-0052bd5a-8359-4a66-b432-45fe70e67b79.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/Yawning-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/Yawning.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/Yawning",
+      "status": "generated by root; awaiting QA",
+      "selection_reason": "First six chronological action cells; last two are resting duplicates generated as padding.",
+      "packing": {
+        "cell_size": 180,
+        "x_offset": 38,
+        "fps": 4
+      }
+    },
+    "Dragging": {
+      "grid": [
+        4,
+        2
+      ],
+      "requested_frame_count": 6,
+      "selected_source_cells": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 4 columns x 2 rows, eight equal SQUARE cells, atlas aspect ratio 2:1. Reading left to right top then bottom. First SIX cells are six consecutive action frames; last two repeat neutral pose.\nAction: DRAGGING interaction response, same dog held gently upright in midair without any visible support, front-three-quarter facing slightly screen-left. Four natural little furry paws dangle close below compact body, head remains enormous round approved head and red collar/gold bell. Six gentle loop frames: neutral curious eyes, slight left body sway, ears flutter tiny, neutral, slight right sway, neutral. All dog fully inside cells, lowest paws on common registration line. No grabbing hand, no harness, no leash, no floating symbols. No elongated torso or altered identity.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a0fd4c-4806-7140-89eb-bd92bb541d44\\exec-575d55ab-99d3-4998-a9f7-a033d0160e76.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/Dragging-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/Dragging.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/Dragging",
+      "status": "generated by root; awaiting QA",
+      "selection_reason": "First six chronological action cells; last two are resting duplicates generated as padding.",
+      "packing": {
+        "cell_size": 180,
+        "x_offset": 38,
+        "fps": 4
+      }
+    },
+    "LookLeft": {
+      "grid": [
+        3,
+        1
+      ],
+      "requested_frame_count": 3,
+      "selected_source_cells": [
+        0,
+        1,
+        2
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 3 columns x 1 row, three equal SQUARE cells, atlas aspect ratio3:1, reading left to right.\nAction: three natural LOOK LEFT frames, same dog standing stationary with grounded paws, front-three-quarter base pose. Frame1 gently begin turn head toward SCREEN LEFT, frame2 clearly glance left, frame3 hold left glance. Nose points screen-left and little eyes gaze left. Keep full body visible, same enormous round head, short nose and red collar/gold bell, no body walking. True individually generated anatomy; no mirrored text or redrawn character.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a0fd4c-4806-7140-89eb-bd92bb541d44\\exec-990ddaad-471e-40c8-8dd4-4f1625d1608f.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/LookLeft-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/LookLeft.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/LookLeft",
+      "status": "generated by root; awaiting QA",
+      "selection_reason": "All requested chronological frames.",
+      "packing": {
+        "cell_size": 180,
+        "x_offset": 38,
+        "fps": 4
+      }
+    },
+    "LookRight": {
+      "grid": [
+        3,
+        1
+      ],
+      "requested_frame_count": 3,
+      "selected_source_cells": [
+        0,
+        1,
+        2
+      ],
+      "prompt": "Use case: identity-preserve\nAsset type: production raster sprite animation atlas for a 160px desktop pet, generated with genuine transparent alpha.\nInput roles: Image 1 is the PRIMARY APPROVED P6 IdentityAnchor and is the exact character model to reuse; Image 2 is the actual pet photo for tiny dark eyes, very short snout, warm mouth fur and round fluffy head identity; Image 3 is supporting real bichon anatomy only, not a competing character design.\nKEEP THE EXACT DOG FROM IMAGE 1. Its enormous round densely fluffy white head, rounded drop ears merged into the head silhouette, tiny glossy dark eyes deeply nested in fur, SHORT dark nose/muzzle, slightly warm mouth fur, compact small body, short furry legs, puff curled tail, RED patterned collar and small GOLD round bell stay identical in every cell. The head remains disproportionately large, not a generic terrier/maltese/poodle dog. Detailed natural photoreal furry raster appearance and soft neutral light exactly match image1. Not cartoon eyes, not illustration, not plastic3D, not a different dog. No collar recolor.\nScene/backdrop: truly transparent empty background, NO checkerboard baked into pixels, no floor, no cast-shadow plane.\nComposition: one indivisible full dog in each equal SQUARE cell. Each subject entirely inside its own cell with generous transparent padding at least 7% from every cell edge; same fixed camera and scale, same character proportions, no auto zoom between poses. Whole paws, fur, tail and collar included. All visible floor-contact paws use the same horizontal floor line, about 88% cell height. Do not label cells, do not draw grid lines. No text, numbers, logo, watermark, hands, people, straps, duplicate anatomy, extra animals or unrelated props.\nReturn ONLY the atlas.\nLayout: EXACT 3 columns x 1 row, three equal SQUARE cells, atlas aspect ratio3:1, reading left to right.\nAction: three natural LOOK RIGHT frames, same dog standing stationary with grounded paws, front-three-quarter base pose. Frame1 gently begin turn head toward SCREEN RIGHT, frame2 clearly glance right, frame3 hold right glance. Nose points screen-right and little eyes gaze right. Keep full body visible, same enormous round head, short nose and red collar/gold bell, no body walking. True individually generated anatomy; do not mirror another atlas.",
+      "references": [
+        "C:/Users/BOSSlee/Desktop/DesktopPet/artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/pet.jpg",
+        "C:/Users/BOSSlee/Desktop/DesktopPet/src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png"
+      ],
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a0fd4c-4806-7140-89eb-bd92bb541d44\\exec-3ecf0280-6123-4aa8-9a0d-29f5dc9da890.png",
+      "staged_source": "artifacts/imagegen/p7/base/history/LookRight-v1.png",
+      "selected_atlas": "artifacts/imagegen/p7/base/LookRight.png",
+      "packaged_directory": "artifacts/imagegen/p7/base/packaged/LookRight",
+      "status": "generated by root; awaiting QA",
+      "selection_reason": "All requested chronological frames.",
+      "packing": {
+        "cell_size": 180,
+        "x_offset": 38,
+        "fps": 4
+      }
+    }
+  }
+}

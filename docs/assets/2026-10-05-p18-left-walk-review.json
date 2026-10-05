@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-05",
+  "mode": "built-in image_gen",
+  "candidate": {
+    "prompt": "Create a production animation sprite atlas for this existing desktop bichon dog. Reference 1 is the actual dog photograph and reference 2 is the dog identity/three-view guide. Reference 3 is the previous accepted LEFT walk contact sheet: use its short proportions, left-facing camera, face, floppy rounded curly ears, red floral collar and gold bell, fluffy curved tail, realistic white fur and small-foot silhouette as the visual continuity baseline. Do not copy the printed labels or background.\nDeliver exactly TWELVE chronological frames of ONE seamless gentle LEFT-facing walking cycle, arranged four columns by three rows. Every cell contains the SAME individual dog, same camera and fixed scale. True transparent RGBA background, no ground, no shadow, no grid, no lettering. Each dog's head, ears, tail and paws entirely inside its cell, with generous transparent gutters. Canvas wide 4:3 atlas. All grounded paws sit on a common baseline 87% down each cell. Same head, torso and hip anchor positions in every cell; quiet expression, mouth gently open; no head turning or changing size.\nThe animation problem to FIX is unnatural hind-leg kicking. Use a small relaxed step, ordinary realistic canine anatomy. The near hind leg must be rooted to ONE stable hip. Knee bends forward toward the head; hock folds naturally below it; the foot stays small and its toes point forward toward LEFT. NO backwards kick, no leg curling into a round hook, no stretchy rubber leg, no hind paw sticking high behind the rump. Maximum swing clearance just 5% of the dog's full standing height. Small stride about half one paw-to-hip distance. Planted paws stay flat. Stance shifts a planted paw slowly backwards relative to the torso (to the right); then toe-off; swing brings that SAME paw forward to the LEFT under the belly in a low smooth arc, then it lands.\nFor the NEAR hind foot, this exact cyclic timeline relative to the stable hip: frame0 foot just ahead of hip, flat support; frame1 slightly behind frame0 at ground; frame2 under hip at ground; frame3 slightly behind hip at ground; frame4 further behind but still supporting; frame5 toe-off, low heel lift, no backward rise; frame6 bends knee/hock and lifts the foot a LITTLE while beginning forward travel; frame7 foot moving forward under hip; frame8 foot just ahead of hip and descending; frame9 low landing to the LEFT; frame10 flat foreward stance; frame11 shifts slightly rearward, almost the frame0 pose. Adjacent frames must form smoothly increasing phase, including 11->0: no jump at row boundaries or loop seam.\nOffset the far hind leg by half a cycle, and stagger the front legs to make a four-beat WALK. At least two paws touch ground in every frame, no trot, no hop, no running or flight. Each foreleg has a small continuous support/swing cycle, never a fixed repeated front pose across the sheet. Keep far legs behind near legs and softly shaded so they don't swap identity. Do not exaggerate bends. Consistent detailed real-dog appearance, not a plush toy.",
+    "references": [
+      "src/DesktopPet/Assets/Pet/pet.jpg",
+      "src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png",
+      "artifacts/imagegen/p18/P16-left-contact.png"
+    ],
+    "file": "artifacts/imagegen/p18/WalkLeft-rejected-atlas.png",
+    "adopted": false,
+    "reason": "Rejected: contaminated transparent gutters and insufficient consistent hind-foot phase progression."
+  },
+  "selected": {
+    "mode": "restore exact accepted P16 source frames and 10 fps timing",
+    "source": "artifacts/imagegen/p17/previous-runtime/WalkLeft",
+    "destination": "src/DesktopPet/Assets/Pet/WalkLeft",
+    "frames": 8,
+    "fps": 10
+  }
+}

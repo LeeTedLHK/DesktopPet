@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="../../src/DesktopPet.Core/Models/AppSettings.cs" Link="Models/AppSettings.cs" />
+    <Compile Include="../../src/DesktopPet.Core/Models/PetProfile.cs" Link="Models/PetProfile.cs" />
+    <Compile Include="../../src/DesktopPet.Core/Journal/*.cs" Link="Journal/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

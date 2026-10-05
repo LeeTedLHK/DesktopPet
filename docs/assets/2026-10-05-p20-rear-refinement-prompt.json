@@ -1,0 +1,30 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": [
+    {
+      "stage": "rear-paw correction",
+      "prompt": "Precise-object-edit of the supplied existing 8-dog right-walking atlas. Preserve ALL heads, faces, tongue, fluffy ears, body proportions, torso, tail, collar and bell at their existing scale/location/angle. Preserve first row four sprites and bottom-row second/third sprites as they are. ONLY fix rear paws in TWO cells: bottom row FIRST (phase4, index4), bottom row FOURTH (phase7,index7).\nPhase4, bottom-left: the NEAR rear leg (the rear paw that is visible on the left/back outside of the hip silhouette) must be finishing push-off and leaving ground BEHIND the hip, slightly lifted with bent knee/hock; do not replant it straight under the rump. Far hind leg stays weight-bearing under the hip and supports body. Maintain the existing forelegs.\nPhase7, bottom-right: the NEAR rear leg should have already landed FORWARD UNDER THE BELLY and now be supporting with paw roughly directly under or just forward of the hip. Move that rear paw to the right from its current exaggerated back extension to under the rump, around x145-160 within its384pixel cell, with naturally flexed hock. Its next pose is index0(top-left) support, so index7 must lead naturally into index0 without an extra backward kick. Far rear paw goes behind as appropriate without doubling/fusing legs. Keep existing forelegs unchanged.\nOriginal desktop pet appearance is FIXED. Especially retain the large round fluffy head, happy pink tongue, long white ears, compact torso and rounded fluffy plume tail exactly as the input. No longer body or smaller head. Legs have original short fluffy length, no bare stick joints.\nSame1536x1024 transparent RGBA atlas with4x2cellspacing. No text, diagrams, floor, shadows, other objects or opaque background. Do not alter appearance, lighting, perspective or motion order. Only two specified rear-leg corrections.",
+      "generated_atlas": "artifacts/imagegen/p20/WalkRight-rear-correction-v1-atlas.png",
+      "status": "Raw candidate rejected: nonzero alpha in background; phase4 too high"
+    },
+    {
+      "stage": "background extraction",
+      "prompt": "Use case: background-extraction. Preserve the provided 8-dog sprite sheet exactly in pose, character, layout and1536x1024dimensions. Fix only the transparent background.\nThis image currently has subtle semitransparent rectangular gray patches around the bottom-row dogs. Remove ALL background pixels/gray patches/rectangles completely, including their alpha. Every area outside the eight actual dog silhouettes must be genuinely alpha0. Keep all dog fur, facial features, body proportions, exact paw poses, collar/bell and all4x2cell positions unchanged. No added shadow/glow/gradient or painted background.\nCRITICAL preserve bottom-right dog's FOUR LEG ARRANGEMENT: one hind foot bears weight under its hip at approximately atlas x1300,y910; its other hind paw is visible back at the left. Preserve the clean separation of both hind legs. Do not redesign the head, face, ears, tail, torso or feet. No further motion changes. Same white curly bichon with round head, long ears, happy mouth and tongue, rounded plume tail. The background is to be REMOVED, not rendered as a gray studio scene. Transparent PNG output, same1536x1024, no text.",
+      "generated_atlas": "artifacts/imagegen/p20/WalkRight-rear-alpha-clean-v2-atlas.png",
+      "adopted_whole_cells": [
+        7
+      ]
+    }
+  ],
+  "source": "artifacts/imagegen/p20/WalkRight-selected-atlas.png",
+  "original_cells_preserved": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "reason": "Original phase4 already had a low rear-paw lift. Only whole phase7 from clean ImageGen output was adopted to improve near/far hind support readability. No bodypart compositing or alpha masks."
+}

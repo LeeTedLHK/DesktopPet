@@ -1,4 +1,4 @@
-# Dot-source this file to use a workspace-local SDK without changing the system PATH.
+﻿# Dot-source this file to use a workspace-local SDK without changing the system PATH.
 $taskRoot = Split-Path -Parent $PSScriptRoot
 $taskSdk = Join-Path $taskRoot '.tools\dotnet'
 if (Test-Path -LiteralPath (Join-Path $taskSdk 'dotnet.exe')) {

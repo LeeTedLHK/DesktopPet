@@ -147,7 +147,7 @@ public sealed class AnimationLoaderTests
         {
             var clips = new AnimationLoader(root, messages.Add).Load();
 
-            Assert.Equal(6, clips.Count);
+            Assert.Equal(Enum.GetValues<AnimationKind>().Length, clips.Count);
             Assert.All(clips.Values, clip => Assert.Empty(clip.Frames));
             Assert.NotEmpty(messages);
         }

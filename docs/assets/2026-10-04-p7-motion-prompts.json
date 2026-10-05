@@ -1,0 +1,350 @@
+{
+  "date": "2026-10-04",
+  "phase": "P7",
+  "generator": "built-in tools.image_gen__imagegen",
+  "transparent_background": true,
+  "primary_identity": "P6 IdentityAnchor-v1 and actual pet.jpg; huge round cloud head, long blended ears, cream muzzle, shaggy curls, patterned red collar and gold bell",
+  "references": [
+    "artifacts/imagegen/p6/IdentityAnchor-v1.png",
+    "src/DesktopPet/Assets/Pet/pet.jpg",
+    "src/DesktopPet/Assets/Pet/比熊犬三视图参考图.png",
+    "artifacts/imagegen/p6/WalkLeft-contact.png",
+    "artifacts/imagegen/p6/RunRight-contact.png"
+  ],
+  "attempts": [
+    {
+      "atlas": "Start",
+      "actions": [
+        "StartLeft",
+        "StartRight"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: four-frame move-start transition in each direction. TOP ROW: StartLeft, faces LEFT toward screen left in every frame. BOTTOM ROW: StartRight, faces RIGHT toward screen right in every frame. Columns left-to-right chronological: 1 attentive neutral quadruped stance; 2 slight crouch with weight gathered over hindquarters ready to move; 3 hind paw push and front paw lifting into first forward step; 4 first confident forward stride flowing into the approved walking cycle. Clear visible progression of posture and leg articulation, modest head dip during crouch; dog's face remains relaxed and recognizable with subtle open friendly mouth.",
+      "selected": true,
+      "status": "recovered and visually identified",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-847ec4d9-353d-411b-a910-843c9fd3e351.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/Start.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "Stop",
+      "actions": [
+        "StopLeft",
+        "StopRight"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: four-frame move-stop transition in each direction. TOP ROW: StopLeft faces LEFT in every frame; BOTTOM ROW: StopRight faces RIGHT in every frame. Columns left-to-right chronological: 1 moving stride, forward front paw extended; 2 shorter decelerating stride, head begins rising; 3 forelegs brace naturally, all paws settling, body weight compresses slightly forward; 4 stable upright relaxed quadruped stance. Show meaningful deceleration and bracing but no skid lines or body sliding. Mouth gently friendly.",
+      "selected": true,
+      "status": "recovered and visually identified",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-6e2f8232-5b5e-4263-918b-3f882e039183.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/Stop.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "Turn",
+      "actions": [
+        "TurnLeft",
+        "TurnRight"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: four-frame direction-change turn through the FRONT of this same dog, grounded pivots. TOP ROW is TurnLeft: column1 facing RIGHT in approved right-facing three-quarter profile; column2 pivots head and chest toward camera, right-front quarter; column3 passes nearly FRONTAL while leading head turns slightly LEFT; column4 dog now faces LEFT in approved left-facing three-quarter profile. BOTTOM ROW TurnRight is independently rendered opposite chronological pivot: column1 facing LEFT; column2 left-front quarter toward camera; column3 nearly FRONTAL while leading head turns slightly RIGHT; column4 faces RIGHT. Forepaws step/pivot realistically and rear paws redistribute weight. Body naturally looks narrower when frontal. The rounded head, nose, muzzle and long ears remain exactly recognizable; no rear view, no twisting neck, no teleporting/mirroring, no duplicate identical poses.",
+      "selected": false,
+      "status": "rejected: regular grid slicing crosses fur",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-e47d7694-e31e-48ae-bc87-787026f97605.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/Turn.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "Pickup",
+      "actions": [
+        "PickupLeft",
+        "PickupRight"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: four-frame ground-pickup bend and rise. TOP ROW PickupLeft faces LEFT throughout; BOTTOM ROW PickupRight faces RIGHT throughout. Columns: 1 steady quadruped stance, closes friendly mouth and lowers head toward ground; 2 deepest neck/chest bend with slightly flexed forelegs, muzzle very near foot baseline, jaws open a little ready to grasp an INVISIBLE toy; 3 lifts head halfway, mouth gently closed around invisible bite, no tongue protrudes; 4 head back to comfortable slightly low carrying height, stable quadruped stance, gentle firm closed bite. Dog ONLY, mouth unobstructed and no toy drawn. Preserve the enormous rounded furry head while it lowers, realistic neck articulation and consistent body dimensions.",
+      "selected": true,
+      "status": "recovered and visually identified",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-9ffffe5e-56c9-405b-801f-401bc8e0df95.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/Pickup.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "Drop",
+      "actions": [
+        "DropLeft",
+        "DropRight"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: four-frame delivery/drop bend and rise. TOP ROW DropLeft faces LEFT throughout; BOTTOM ROW DropRight faces RIGHT throughout. Columns: 1 steady quadruped stance with head at slightly low carrying height and gentle closed bite; 2 bends neck/chest down toward floor, slight foreleg bend, mouth still softly closed; 3 muzzle near foot baseline and jaws part slightly to release an INVISIBLE toy; 4 raises head into relaxed upright stance, friendly mouth opening a little. Dog ONLY, no toy drawn or shadows. Preserve rounded huge furry head, consistent body dimensions and faithful facial likeness.",
+      "selected": true,
+      "status": "recovered and visually identified",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-d9f14f8d-2572-485b-8dfe-d7ca0d72cd37.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/Drop.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "JumpLeft",
+      "actions": [
+        "JumpLeft"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: EIGHT chronological frames of a bounded left-facing jump and air catch with no visible toy. Every dog faces LEFT. Read row-major, top row frames1-4 then bottom row frames5-8: 1 stable ready stance; 2 clear crouch hindlegs compressed, head dipped; 3 takeoff hind paws pushing, forepaws lifting, chest rises; 4 flight forepaws bent/tucked beneath chest, head looking slightly upward, mouth opening to catch INVISIBLE toy; 5 apex catching pose, mouth open a little, forepaws tucked and hindpaws curled, no tongue extension; 6 descent forepaws extending toward landing with mouth gently closed around INVISIBLE toy; 7 soft forepaw landing, elbows and hindlegs flex absorb weight; 8 stable recovered quadruped carrying stance, mouth gently closed, slightly low head. Runtime moves the window vertically, so these cells depict authentic crouch/limb flex at a common root position rather than huge vertical displacement of the dog within the cell. Grounded frames share the 82percent paw baseline; tucked airborne paws may sit only modestly above it. Anatomical jump, no flying/superhero pose.",
+      "selected": true,
+      "status": "recovered and visually identified",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-04d61dac-ee88-45e5-aeb5-b73d5db012fa.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/JumpLeft.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "JumpRight",
+      "actions": [
+        "JumpRight"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: EIGHT chronological frames of a bounded right-facing jump and air catch with no visible toy. Every dog faces RIGHT, independently authored, no mirroring. Read row-major, top row frames1-4 then bottom row frames5-8: 1 stable ready stance; 2 clear crouch hindlegs compressed, head dipped; 3 takeoff hind paws pushing, forepaws lifting, chest rises; 4 flight forepaws bent/tucked beneath chest, head looking slightly upward, mouth opening to catch INVISIBLE toy; 5 apex catching pose, mouth open a little, forepaws tucked and hindpaws curled, no tongue extension; 6 descent forepaws extending toward landing with mouth gently closed around INVISIBLE toy; 7 soft forepaw landing, elbows and hindlegs flex absorb weight; 8 stable recovered quadruped carrying stance, mouth gently closed, slightly low head. Runtime moves the window vertically, so these cells depict authentic crouch/limb flex at a common root position rather than huge vertical displacement of the dog within the cell. Grounded frames share the 82percent paw baseline; tucked airborne paws may sit only modestly above it. Anatomical jump, no flying/superhero pose.",
+      "selected": true,
+      "status": "recovered and visually identified",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-6ec8c9a6-ed89-4d7e-a2f4-086589e39e84.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/JumpRight.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "CarryLeft",
+      "actions": [
+        "CarryLeft"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: EIGHT frames of a smooth LOOPING left-facing carry walking cycle. Every dog faces LEFT. Eight evenly spaced gait beats read row-major top row first then bottom row, naturally cycling alternating quadruped fore/hind contacts and passing/swing phases. Comparable stride to Image4 approved walk. Mouth held in stable gentle closed bite around an INVISIBLE toy, no toy pixels, lips/muzzle slightly low and steady for runtime mouth attachment, no tongue protrudes. Head stays at comfortable carrying height with only tiny natural gait bob. Same full body size, huge round head and fur throughout, stable mouth placement. Visible coordinated leg articulation in all eight frames; last naturally flows back to first. Grounded paws share common baseline.",
+      "selected": true,
+      "status": "recovered and visually identified",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-cd62eb3a-7c1e-4e8f-bb24-876c043af106.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/CarryLeft.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "CarryRight",
+      "actions": [
+        "CarryRight"
+      ],
+      "version": 1,
+      "prompt": "Use case: stylized-concept.\nAsset type: production photographic desktop-dog animation sprite sheet, true transparent RGBA.\nReference roles: Image 1 is the PRIMARY APPROVED P6 identity anchor: match this exact individual dog's large round fluffy cloud head, long blended ears and rounded cheeks, short substantial cream-tinted furry muzzle, small dark eyes, black nose, white soft curly coat, compact body, fluffy rounded paws, plumed curled tail, patterned RED collar and round gold/yellow bell. Image 2 is the real individual dog photo for facial likeness. Image 3 supports bichon anatomy only; Image 1's likeness controls. Images 4 and 5 are approved P6 gait/frame rendering and perspective examples; ignore their dark contact-board backgrounds, captions and layouts. These are all references, not pixels to mirror or warp.\nStyle: faithful photographic realistic soft fur, exactly the same rendering and elevated subtle three-quarter camera as approved P6. Rounded head at least as dominant proportionally as Image 1 and approved gaits. Do not replace with a generic bichon, poodle, puppy, cartoon, or shorter ears.\nSheet rules: landscape FOUR COLUMNS by TWO ROWS of EIGHT equal square cells in an exact regular 4×2 grid. One full dog per cell, all eight frames. In-place animation; camera, individual, scale, proportions, lighting, collar and bell remain consistent. Keep comfortable clear transparent margin around all dog fur/paws/tail (at least 17 percent), no part touches cell border and no frame overlaps another. Make each entire dog SMALL and spacious: about 60–65 percent of each square cell's width and height, with head diameter about 28 percent of cell width. Most canvas is empty transparent space. Grounded paws sit on the same invisible local foot baseline at 82 percent of each cell's height. Keep dog body centered; movement comes from genuine pose articulation. Show motion clearly without changing the dog's identity or body scale.\nBackground: genuinely transparent alpha, no floor, no contact/drop shadow, no checkerboard pixels, no black/white/colored backdrop, no text, frame numbers, labels, borders, grid lines, watermarks or motion graphics. DOG ONLY: no visible toy, ball, frisbee, bowl, hand, leash, food or any other object. The app draws a toy separately. Do not mirror one direction to produce the other; render the dog naturally from each direction with its consistent collar, bell, nose and ear structure.\n\nPrimary request: EIGHT frames of a smooth LOOPING right-facing carry walking cycle. Every dog faces RIGHT, naturally independently rendered, no mirrored anatomy. Eight evenly spaced gait beats read row-major top row first then bottom row, naturally cycling alternating quadruped fore/hind contacts and passing/swing phases. Comparable stride to approved P6 walking render. Mouth held in stable gentle closed bite around an INVISIBLE toy, no toy pixels, lips/muzzle slightly low and steady for runtime mouth attachment, no tongue protrudes. Head stays at comfortable carrying height with only tiny natural gait bob. Same full body size, huge round head and fur throughout, stable mouth placement. Visible coordinated leg articulation in all eight frames; last naturally flows back to first. Grounded paws share common baseline.",
+      "selected": true,
+      "status": "recovered and visually identified",
+      "source_path": "C:\\Users\\BOSSlee\\.codex\\generated_images\\01a1029e-4018-7012-8d95-e5a1aa49cdd2\\exec-4106cff0-cf83-4563-8f5b-9e94b7621599.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/CarryRight.png",
+      "selection_reason": "Inspected recovered atlas: intended chronological action and independently authored directions, approved P6 photo identity."
+    },
+    {
+      "atlas": "Turn",
+      "version": 2,
+      "prompt": "Use case: identity-preserve. Asset type: transparent photographic desktop-dog sprite sheet. Image 1 is the primary approved exact dog identity; image 2 is a rejected layout example ONLY for its chronological turn poses. Create a corrected FOUR-column TWO-row atlas of EIGHT equal SQUARE cells, landscape exactly 2:1. Match image1's huge round shaggy white bichon head, tiny dark eyes, very short warm furry muzzle, rounded floppy ears, small body, curled puff tail, patterned RED collar and GOLD bell. The camera, lighting, individual and scale stay fixed. DOG ONLY, no props. True empty transparent alpha, no backdrop, cast shadow, labels, gridlines or text. Crucial corrected layout: each dog must be SMALL, no larger than 55% of its cell width and 65% of cell height. Center each COMPLETE indivisible dog independently with at least 20% truly empty alpha gutter on left and right of every cell. Absolutely no fur, nose, paw or tail crosses any cell boundary. Top row TurnLeft chronological columns: dog faces RIGHT, then right-front three-quarter pivot, then almost frontal while head leads LEFT, then dog faces LEFT. Bottom row TurnRight chronological columns: dog faces LEFT, then left-front three-quarter pivot, then almost frontal while head leads RIGHT, then faces RIGHT. Natural grounded stepping pivot of all body, not head-only rotation. All standing foot contacts at common local baseline80% of cell height. Preserve rounded big head and correct natural directional views; do not mirror pixels. Image2's oversized/overlapping subjects are specifically rejected: give every subject ample clear margin.\n",
+      "references": [
+        "artifacts/imagegen/p6/IdentityAnchor-v1.png",
+        "artifacts/imagegen/p7/motion/Turn-v1-rejected.png"
+      ],
+      "source_path": "C:/Users/BOSSlee/.codex/generated_images/01a0fd4c-4806-7140-89eb-bd92bb541d44/exec-44da4a50-d49a-46bd-ad8c-122134a26449.png",
+      "selected_atlas": "artifacts/imagegen/p7/motion/Turn.png",
+      "selected": true,
+      "status": "complete rectangular-cell slicing at observed transparent gutters; one common pixel scale; no body distortion or alpha masks"
+    }
+  ],
+  "packaging": {
+    "script": "scripts/prepare-p7-motion-assets.py",
+    "staged_directory": "artifacts/imagegen/p7/motion/packaged",
+    "method": "whole equal-cell crop; fixed uniform scale per action; whole-frame translation only; preserve generated alpha; no body masks, warp, mirroring, or synthesized poses",
+    "frame_size": [
+      256,
+      256
+    ],
+    "ground_baseline": 228,
+    "frame_counts": {
+      "StartLeft": 4,
+      "StartRight": 4,
+      "StopLeft": 4,
+      "StopRight": 4,
+      "TurnLeft": 4,
+      "TurnRight": 4,
+      "PickupLeft": 4,
+      "PickupRight": 4,
+      "DropLeft": 4,
+      "DropRight": 4,
+      "JumpLeft": 8,
+      "JumpRight": 8,
+      "CarryLeft": 8,
+      "CarryRight": 8
+    },
+    "fixed_framing": {
+      "StartLeft": {
+        "sheet": "Start",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "StartRight": {
+        "sheet": "Start",
+        "indices": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "StopLeft": {
+        "sheet": "Stop",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "StopRight": {
+        "sheet": "Stop",
+        "indices": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "TurnLeft": {
+        "sheet": "Turn",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "TurnRight": {
+        "sheet": "Turn",
+        "indices": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "PickupLeft": {
+        "sheet": "Pickup",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "PickupRight": {
+        "sheet": "Pickup",
+        "indices": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "DropLeft": {
+        "sheet": "Drop",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "DropRight": {
+        "sheet": "Drop",
+        "indices": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 8
+      },
+      "JumpLeft": {
+        "sheet": "JumpLeft",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 12
+      },
+      "JumpRight": {
+        "sheet": "JumpRight",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 12
+      },
+      "CarryLeft": {
+        "sheet": "CarryLeft",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 10
+      },
+      "CarryRight": {
+        "sheet": "CarryRight",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_size": 232,
+        "fps": 10
+      }
+    },
+    "jump_registration": "contact paws align to228; airborne/recovery poses retain generated paw clearance from the same source row contact ground; runtime supplies the main vertical trajectory"
+  }
+}

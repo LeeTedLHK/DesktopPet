@@ -6,11 +6,27 @@
         ResizeMode="NoResize" ShowActivated="False" WindowStartupLocation="Manual"
         UseLayoutRounding="True" AutomationProperties.Name="DesktopPet 桌面宠物">
     <Grid x:Name="PetSurface" Background="Transparent" Cursor="Hand"
-          ToolTip="左键拖动 · 单击互动 · 右键打开菜单">
+          ToolTip="点击头部摸头 · 左键拖动 · 右键喂食 · Ctrl+Alt+P 显示/隐藏">
         <Grid.ContextMenu>
             <ContextMenu x:Name="PetMenu">
+                <MenuItem x:Name="PetHeadItem" Header="摸摸头" />
+                <MenuItem x:Name="FeedItem" Header="喂食" />
+                <MenuItem x:Name="CompanionItem" Header="宠物状态与专注…" />
+                <MenuItem x:Name="FocusStartItem" Header="开始一轮专注" />
+                <MenuItem x:Name="FocusPauseItem" Header="暂停专注 / 休息" />
+                <MenuItem x:Name="FocusStopItem" Header="停止番茄钟" />
+                <MenuItem x:Name="BallItem" Header="抛小球" />
+                <MenuItem x:Name="FrisbeeItem" Header="抛飞盘" />
+                <MenuItem x:Name="FollowItem" Header="跟我散步（30秒）" />
+                <MenuItem x:Name="ChallengeItem" Header="三回合接球挑战" />
+                <MenuItem x:Name="StopPlayItem" Header="结束当前玩法" />
+                <MenuItem x:Name="PhotoItem" Header="保存宠物拍立得" />
+                <MenuItem x:Name="HomeItem" Header="回小窝睡觉" />
+                <MenuItem x:Name="ResetItem" Header="找回宠物 / 重置位置" />
+                <Separator />
                 <MenuItem x:Name="PauseItem" Header="暂停自动行为" />
                 <MenuItem x:Name="TopmostItem" Header="始终置顶" IsCheckable="True" />
+                <MenuItem x:Name="ClickThroughItem" Header="鼠标穿透（Ctrl+Alt+M）" IsCheckable="True" />
                 <Separator />
                 <MenuItem x:Name="SettingsItem" Header="设置…" />
                 <MenuItem x:Name="HideItem" Header="隐藏宠物" />
